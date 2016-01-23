@@ -1,0 +1,135 @@
+<div class="section">
+	<h2>
+		Test Cases<a name="Test_Cases"></a>
+	</h2>
+	<a name="Test_Cases"></a>
+	<p>
+		[<a href="#Summary">Summary</a>] [<a href="#Package_List">Package
+			List</a>] [<a href="#Test_Cases">Test Cases</a>]
+	</p>
+	{{range .Packages}}
+		{{range .Classes}}
+			<div class="section">
+				<h3>
+					{{.SimpleName}}<a name="{{.SimpleName}}"></a>
+				</h3>
+				<a name="{{.Name}}"></a>
+				<table border="1" class="bodyTable">
+					<tbody>
+						{{range $index, $method := .Methods}}
+							{{$result := .Result}}
+							{{if eq $result "s"}}
+								<tr class="{{if isOdd $index}}a{{else}}b{{end}}">
+									<td>{{resultSymbol .}}</td>
+									<td><a name="TC_{{.ClassName}}.{{.Name}}"></a>{{.Name}}</td>
+									<td>{{formateFloatStr .Time}}</td>
+								</tr>
+							{{else if eq $result "i"}}
+								<tr class="{{if isOdd $index}}a{{else}}b{{end}}">
+									<td><a href="#{{.ClassName}}.{{.Name}}">{{resultSymbol .}}</a></td>
+									<td><a name="TC_{{.ClassName}}.{{.Name}}"></a><a href="#{{.ClassName}}.{{.Name}}">{{.Name}}</a>
+										<div class="detailToggle" style="display: inline">
+											<a
+												href="javascript:toggleDisplay('{{.ClassName}}.{{.Name}}');"><span
+												style="display: inline;"
+												id="{{.ClassName}}.{{.Name}}off">
+													+ </span><span style="display: none;"
+												id="{{.ClassName}}.{{.Name}}on">
+													- </span>[ Detail ]</a>
+										</div></td>
+									<td>{{formateFloatStr .Time}}</td>
+								</tr>
+								<tr class="{{if isOdd $index}}a{{else}}b{{end}}">
+									<td></td>
+									<td>skipped</td>
+								<td></td></tr>
+							{{else if eq $result "f"}}
+								<tr class="{{if isOdd $index}}a{{else}}b{{end}}">
+									<td><a href="#{{.ClassName}}.{{.Name}}">{{resultSymbol .}}</a></td>
+									<td><a name="TC_{{.ClassName}}.{{.Name}}"></a><a
+										href="#{{.ClassName}}.{{.Name}}">{{.Name}}</a>
+										<div class="detailToggle" style="display: inline">
+											<a href="javascript:toggleDisplay('{{.ClassName}}.{{.Name}}');"><span
+												style="display: inline;"
+												id="{{.ClassName}}.{{.Name}}off">
+													+ </span><span style="display: none;"
+												id="{{.ClassName}}.{{.Name}}on">
+													- </span>[ Detail ]</a>
+										</div></td>
+									<td>{{formateFloatStr .Time}}</td>
+								</tr>
+								<tr class="{{if isOdd $index}}a{{else}}b{{end}}">
+									<td></td>
+									<td>{{.Message}}</td>
+									<td></td>
+								</tr>
+								<tr class="{{if isOdd $index}}a{{else}}b{{end}}">
+									<td></td>
+									<td>
+										<div
+											id="{{.ClassName}}.{{.Name}}error"
+											style="display: none;">
+											<div>
+												<pre>{{.StackTrace}}</pre>
+											</div>
+										</div>
+									</td>
+									<td></td>
+								</tr>
+								<tr class="{{if isOdd $index}}a{{else}}b{{end}}">
+									<td></td>
+									<td name="testcase_name">
+										<pre>{{.Log}}</pre>
+									</td>
+									<td></td>
+								</tr>
+							{{else if eq $result "e"}}
+								<tr class="{{if isOdd $index}}a{{else}}b{{end}}">
+									<td><a href="#{{.ClassName}}.{{.Name}}">{{resultSymbol .}}</a></td>
+									<td><a name="TC_{{.ClassName}}.{{.Name}}"></a><a
+										href="#{{.ClassName}}.{{.Name}}">{{.Name}}</a>
+										<div class="detailToggle" style="display: inline">
+											<a
+												href="javascript:toggleDisplay('{{.ClassName}}.{{.Name}}');"><span
+												style="display: inline;"
+												id="{{.ClassName}}.{{.Name}}off">
+													+ </span><span style="display: none;"
+												id="{{.ClassName}}.{{.Name}}on">
+													- </span>[ Detail ]</a>
+										</div></td>
+									<td>{{formateFloatStr .Time}}</td>
+								</tr>
+								<tr class="{{if isOdd $index}}a{{else}}b{{end}}">
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr class="{{if isOdd $index}}a{{else}}b{{end}}">
+									<td></td>
+									<td>
+										<div
+											id="{{.ClassName}}.{{.Name}}error"
+											style="display: none;">
+											<div>
+												<pre>{{.StackTrace}}</pre>
+											</div>
+										</div>
+									</td>
+									<td></td>
+								</tr>
+								<tr class="{{if isOdd $index}}a{{else}}b{{end}}">
+									<td></td>
+									<td name="testcase_name">
+										<pre>{{.Log}}</pre>
+									</td>
+									<td></td>
+								</tr>
+							{{end}}
+						{{end}}
+					</tbody>
+				</table>
+			</div>
+		{{end}}
+	{{end}}
+	<br>
+</div>

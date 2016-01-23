@@ -1,0 +1,15 @@
+/* You can override this file with your own styles */
+body {
+	padding-left: 5%;
+	padding-right:5%;
+}
+
+pre {
+	 word-wrap:break-word;
+	 width:600px;
+}
+
+table.bodyTable th, table.bodyTable td {
+	vertical-align: middle;
+	font-size: 15px;
+}

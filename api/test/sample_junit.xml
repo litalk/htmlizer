@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="1" time="540.554" errors="1" skipped="2" tests="57" name="com.vip.paas.e2e.suite.All">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="D:\work\Java\jdk1.7.0_79\jre\bin"/>
+    <property name="java.vm.version" value="24.79-b02"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="E:\platformng-e2e-test"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="E:\platformng-e2e-test"/>
+    <property name="java.runtime.version" value="1.7.0_79-b15"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="D:\work\Java\jdk1.7.0_79\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Windows\TEMP\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="D:\work\apache-maven-3.3.1\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="D:\work\Java\jdk1.7.0_79\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Go\bin;C:\Program Files (x86)\nodejs\;c:/Go/bin;D:\work\apache-maven-3.3.1/bin;D:\work\Java\jdk1.7.0_79/bin;e:/ci-go/bin;D:\work\gradle-2.6/bin;C:\Users\ke.wu\AppData\Roaming\npm;C:\Python\Python35;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\ke.wu"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="user.name" value="ke.wu"/>
+    <property name="java.class.path" value="D:\work\apache-maven-3.3.1\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="D:\work\Java\jdk1.7.0_79\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher site"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_79"/>
+    <property name="java.ext.dirs" value="D:\work\Java\jdk1.7.0_79\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="D:\work\Java\jdk1.7.0_79\jre\lib\resources.jar;D:\work\Java\jdk1.7.0_79\jre\lib\rt.jar;D:\work\Java\jdk1.7.0_79\jre\lib\sunrsasign.jar;D:\work\Java\jdk1.7.0_79\jre\lib\jsse.jar;D:\work\Java\jdk1.7.0_79\jre\lib\jce.jar;D:\work\Java\jdk1.7.0_79\jre\lib\charsets.jar;D:\work\Java\jdk1.7.0_79\jre\lib\jfr.jar;D:\work\Java\jdk1.7.0_79\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\work\apache-maven-3.3.1\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase time="3.325" classname="com.vip.paas.e2e.test.ci.cpms.GroupTest" name="create"/>
+  <testcase time="0.035" classname="com.vip.paas.e2e.test.ds.auth.UserTest" name="create"/>
+  <testcase time="0.188" classname="com.vip.paas.e2e.test.ci.cpms.UserTest" name="create"/>
+  <testcase time="0.335" classname="com.vip.paas.e2e.test.ci.cpms.GroupTest" name="delete"/>
+  <testcase time="0.473" classname="com.vip.paas.e2e.test.ds.auth.UserTest" name="remove"/>
+  <testcase time="0.113" classname="com.vip.paas.e2e.test.ci.cpms.UserTest" name="delete"/>
+  <testcase time="0.163" classname="com.vip.paas.e2e.test.ci.cpms.GroupTest" name="update"/>
+  <testcase time="0.045" classname="com.vip.paas.e2e.test.ds.auth.RoleTest" name="addRole"/>
+  <testcase time="0.299" classname="com.vip.paas.e2e.test.ds.auth.UserTest" name="update"/>
+  <testcase time="0.453" classname="com.vip.paas.e2e.test.ci.cpms.UserTest" name="update"/>
+  <testcase time="0.029" classname="com.vip.paas.e2e.test.ds.auth.OrgSpaceTest" name="spaceNumLimitation"/>
+  <testcase time="0.037" classname="com.vip.paas.e2e.test.ds.auth.OrgSpaceTest" name="createOrganization">
+    <skipped/>
+    <system-out>[com.vip.paas.e2e.test.ci.cpms.GroupTest] {&quot;code&quot;:200,&quot;status&quot;:&quot;OK&quot;,&quot;json_object&quot;:{&quot;groups&quot;:[{&quot;id&quot;:&quot;55ed691d27b43255546c47a8&quot;,&quot;name&quot;:&quot;?????&quot;,&quot;creator&quot;:&quot;jing01.he&quot;,&quot;members&quot;:null},{&quot;id&quot;:&quot;55ee535327b43255546c4824&quot;,&quot;name&quot;:&quot;????QA?&quot;,&quot;creator&quot;:&quot;sting.liu&quot;,&quot;description&quot;:&quot;??????????????????????&quot;,&quot;members&quot;:null},{&quot;id&quot;:&quot;55ee3d7027b43255546c47f1&quot;,&quot;name&quot;:&quot;CSC_Tester&quot;,&quot;creator&quot;:&quot;marshal.xu&quot;,&quot;description&quot;:&quot;?????&quot;,&quot;members&quot;:[&quot;dora.liu&quot;,&quot;marshal.xu&quot;,&quot;mink.zhang&quot;,&quot;liyun.chen&quot;,&quot;shara.ma&quot;,&quot;win.liang&quot;]},{&quot;id&quot;:&quot;55e416f04d8a71099a566534&quot;,&quot;name&quot;:&quot;DEMO&quot;,&quot;creator&quot;:&quot;lei05.wu&quot;,&quot;description&quot;:&quot;test&quot;,&quot;members&quot;:[&quot;ke.wu&quot;]},{&quot;id&quot;:&quot;55ffa99e27b43255546cec0e&quot;,&quot;name&quot;:&quot;EBS&quot;,&quot;creator&quot;:&quot;gilbert.guo&quot;,&quot;description&quot;:&quot;%E8%B4%A2%E5%8A%A1%E7%B3%BB%E7%BB%9F-EBS&quot;,&quot;members&quot;:[&quot;linda.zhao&quot;,&quot;grant.zuo&quot;]},{&quot;id&quot;:&quot;55ffa9a727b43255546cec10&quot;,&quot;name&quot;:&quot;FCS&quot;,&quot;creator&quot;:&quot;gilbert.guo&quot;,&quot;description&quot;:&quot;%E8%B4%A2%E5%8A%A1%E7%B3%BB%E7%BB%9F-FCS&quot;,&quot;members&quot;:[&quot;sally.yi&quot;,&quot;grant.zuo&quot;]},{&quot;id&quot;:&quot;55ed6a8e27b43255546c47ab&quot;,&quot;name&quot;:&quot;PAY_Merch_FE&quot;,&quot;creator&quot;:&quot;wayne.gan&quot;,&quot;description&quot;:&quot;%E5%89%8D%E7%AB%AF\u0026%E8%90%A5%E9%94%80%E7%BB%84&quot;,&quot;members&quot;:[&quot;jing01.he&quot;,&quot;xiaoman.zhang&quot;,&quot;gui.li&quot;,&quot;anita.liu&quot;]},{&quot;id&quot;:&quot;55ffa9f527b43255546cec11&quot;,&quot;name&quot;:&quot;PS&quot;,&quot;creator&quot;:&quot;gilbert.guo&quot;,&quot;description&quot;:&quot;%E8%B4%A2%E5%8A%A1%E7%B3%BB%E7%BB%9F-%E4%BB%B7%E6%A0%BC%E7%B3%BB%E7%BB%9F&quot;,&quot;members&quot;:[&quot;winson.lei&quot;,&quot;grant.zuo&quot;]},{&quot;id&quot;:&quot;55ffa2d627b43255546cec00&quot;,&quot;name&quot;:&quot;VOP&quot;,&quot;creator&quot;:&quot;gilbert.guo&quot;,&quot;description&quot;:&quot;%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0&quot;,&quot;members&quot;:[&quot;ellen.tian&quot;]},{&quot;id&quot;:&quot;5620d5c627b43255546ed8b9&quot;,&quot;name&quot;:&quot;VOP-TEST&quot;,&quot;creator&quot;:&quot;ivy01.li&quot;,&quot;description&quot;:&quot;%E7%94%B0%E5%85%BB%E4%B8%BD&quot;,&quot;members&quot;:null},{&quot;id&quot;:&quot;568c981cb8b95dd604a86798&quot;,&quot;name&quot;:&quot;cGFhc19lMmVfY3Btc19ncm91cF9ncm91cC3mtYvor5U=&quot;,&quot;creator&quot;:&quot;paasci.builder&quot;,&quot;description&quot;:&quot;dGVzdC3mtYvor5U=&quot;,&quot;members&quot;:null},{&quot;id&quot;:&quot;55fa5b5827b43255546ccc97&quot;,&quot;name&quot;:&quot;ci-paas&quot;,&quot;creator&quot;:&quot;ke.wu&quot;,&quot;members&quot;:[&quot;lei05.wu&quot;,&quot;john01.xiao&quot;,&quot;viola.lu&quot;,&quot;robin.yue&quot;,&quot;chengchang.wang&quot;,&quot;ke.wu&quot;]},{&quot;id&quot;:&quot;55dc11e84d8a71099a560da6&quot;,&quot;name&quot;:&quot;ebp-ps&quot;,&quot;creator&quot;:&quot;zerong.he&quot;,&quot;description&quot;:&quot;????-???????&quot;,&quot;members&quot;:[&quot;zerong.he&quot;,&quot;hellen.huang&quot;,&quot;jilin.lu&quot;,&quot;seaon.huang&quot;,&quot;qiang03.liu&quot;]},{&quot;id&quot;:&quot;55dd8d614d8a71099a561ac1&quot;,&quot;name&quot;:&quot;empty&quot;,&quot;creator&quot;:&quot;ke.wu&quot;,&quot;members&quot;:null},{&quot;id&quot;:&quot;55cdb461baeacb2af25c82d1&quot;,&quot;name&quot;:&quot;group_wuke&quot;,&quot;creator&quot;:&quot;ke.wu&quot;,&quot;members&quot;:[&quot;ke.wu&quot;,&quot;viola.lu&quot;]},{&quot;id&quot;:&quot;569dafe7b8b95dd604a9ab1a&quot;,&quot;name&quot;:&quot;paas.e2e.ci.cpms.role.group554&quot;,&quot;creator&quot;:&quot;paasci.builder&quot;,&quot;description&quot;:&quot;test&quot;,&quot;members&quot;:null},{&quot;id&quot;:&quot;55eb9e8f4d8a71099a56ce4e&quot;,&quot;name&quot;:&quot;test&quot;,&quot;creator&quot;:&quot;ck.jiang&quot;,&quot;members&quot;:[&quot;ck.jiang&quot;]},{&quot;id&quot;:&quot;56011b7827b43255546d04cc&quot;,&quot;name&quot;:&quot;user_system_DEV&quot;,&quot;creator&quot;:&quot;sting.liu&quot;,&quot;description&quot;:&quot;%E7%94%A8%E6%88%B7%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91&quot;,&quot;members&quot;:[&quot;zhicheng.han&quot;]},{&quot;id&quot;:&quot;55ee53b127b43255546c4825&quot;,&quot;name&quot;:&quot;user_system_QATeam&quot;,&quot;creator&quot;:&quot;sting.liu&quot;,&quot;description&quot;:&quot;????????????&quot;,&quot;members&quot;:[&quot;sting.liu&quot;,&quot;daisy.hu&quot;,&quot;joan.liu&quot;,&quot;chase.zhang&quot;,&quot;joy.yao&quot;,&quot;neo.wang&quot;,&quot;nicole.heng&quot;,&quot;stephanie.duan&quot;,&quot;echo.sun&quot;]},{&quot;id&quot;:&quot;55d3e37fbaeacb2af25c9725&quot;,&quot;name&quot;:&quot;yuting&quot;,&quot;creator&quot;:&quot;yuting.qiu&quot;,&quot;description&quot;:&quot;test&quot;,&quot;members&quot;:[&quot;yuting.qiu&quot;,&quot;ck.jiang&quot;]},{&quot;id&quot;:&quot;55dd61c64d8a71099a561200&quot;,&quot;name&quot;:&quot;yuting2&quot;,&quot;creator&quot;:&quot;yuting.qiu&quot;,&quot;description&quot;:&quot;yuting2&quot;,&quot;members&quot;:[&quot;yuting.qiu&quot;]}],&quot;offset&quot;:0,&quot;limit&quot;:0,&quot;count&quot;:21,&quot;total_count&quot;:21}}
+</system-out>
+  </testcase>
+  <testcase time="0.037" classname="com.vip.paas.e2e.test.ci.cpms.GroupTest" name="autoComplete"/>
+  <testcase time="0.023" classname="com.vip.paas.e2e.test.ci.cpms.RoleTest" name="create"/>
+  <testcase time="0.69" classname="com.vip.paas.e2e.test.ci.cpms.UserTest" name="autoComplete"/>
+  <testcase time="0.031" classname="com.vip.paas.e2e.test.ci.cpms.PipelineTest" name="create"/>
+  <testcase time="0.011" classname="com.vip.paas.e2e.test.ds.cpms.PipelineTest" name="create"/>
+  <testcase time="0.288" classname="com.vip.paas.e2e.test.ds.auth.OrgSpaceTest" name="updateSpaceInOrg"/>
+  <testcase time="0.119" classname="com.vip.paas.e2e.test.ds.auth.RoleTest" name="updateRole"/>
+  <testcase time="0.38" classname="com.vip.paas.e2e.test.ci.cpms.UserTest" name="list"/>
+  <testcase time="0.394" classname="com.vip.paas.e2e.test.ci.cpms.GroupTest" name="addDeleteMember"/>
+  <testcase time="0.455" classname="com.vip.paas.e2e.test.ci.cpms.RoleTest" name="remove"/>
+  <testcase time="0.064" classname="com.vip.paas.e2e.test.ds.auth.OrgSpaceTest" name="removeOrganization">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.vip.paas.e2e.test.ds.auth.OrgSpaceTest.removeOrganization(OrgSpaceTest.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+</error>
+    <system-out>[com.vip.paas.e2e.test.ci.cpms.RoleTest] send request: POST http://ciportal-orgcpms.staging.paas.paas.vip.com/ciplatform/rest/access/paas.e2e.ci.cpms.role.pipeline554
+[com.vip.paas.e2e.test.ds.auth.OrgSpaceTest] {&quot;code&quot;:404,&quot;message&quot;:&quot;Cannot find any organization by paas-e2e-ds-auth-os-org554.&quot;}
+</system-out>
+  </testcase>
+  <testcase time="0.065" classname="com.vip.paas.e2e.test.ds.auth.OrgSpaceTest" name="updateOrganization">
+    <skipped/>
+  </testcase>
+  <testcase time="0.408" classname="com.vip.paas.e2e.test.ds.auth.OrgSpaceTest" name="removeSpaceInOrg"/>
+  <testcase time="0.859" classname="com.vip.paas.e2e.test.ci.cpms.RolePermissionTest" name="permissionForGuest"/>
+  <testcase time="0.001" classname="com.vip.paas.e2e.test.ds.auth.RoleTest" name="removeRole"/>
+  <testcase time="0.164" classname="com.vip.paas.e2e.test.ci.cpms.RoleTest" name="update"/>
+  <testcase time="1.421" classname="com.vip.paas.e2e.test.ci.cpms.PipelineTest" name="delete"/>
+  <testcase time="0.004" classname="com.vip.paas.e2e.test.ds.cpms.PipelineTest" name="delete"/>
+  <testcase time="0.071" classname="com.vip.paas.e2e.test.ci.cpms.RoleTest" name="canNotRemoveHigherRole"/>
+  <testcase time="0.955" classname="com.vip.paas.e2e.test.ci.cpms.RoleTest" name="canNotUpdateHigherRole"/>
+  <testcase time="4.32" classname="com.vip.paas.e2e.test.ds.auth.PermissionTest" name="permissionForDeveloper"/>
+  <testcase time="0.895" classname="com.vip.paas.e2e.test.ds.cpms.PipelineTest" name="update"/>
+  <testcase time="0.167" classname="com.vip.paas.e2e.test.ci.cpms.PipelineTest" name="update"/>
+  <testcase time="1.146" classname="com.vip.paas.e2e.test.ci.cpms.RolePermissionTest" name="permissionForOwner"/>
+  <testcase time="1.914" classname="com.vip.paas.e2e.test.ds.cpms.PipelineTest" name="autoComplete"/>
+  <testcase time="0.053" classname="com.vip.paas.e2e.test.ci.cpms.PipelineTest" name="autoComplete"/>
+  <testcase time="1.322" classname="com.vip.paas.e2e.test.ds.auth.PermissionTest" name="permissionForNone"/>
+  <testcase time="2.237" classname="com.vip.paas.e2e.test.ci.cpms.PipelineTest" name="list"/>
+  <testcase time="0.372" classname="com.vip.paas.e2e.test.ds.cpms.PipelineTest" name="list"/>
+  <testcase time="0.436" classname="com.vip.paas.e2e.test.ci.cpms.RolePermissionTest" name="permissionForDeveloper"/>
+  <testcase time="2.231" classname="com.vip.paas.e2e.test.ci.cpms.PipelineTest" name="view"/>
+  <testcase time="0.354" classname="com.vip.paas.e2e.test.ci.cpms.PipelineTest" name="jenkinsSlaveLabels"/>
+  <testcase time="0.819" classname="com.vip.paas.e2e.test.ds.cpms.PipelineTest" name="view"/>
+  <testcase time="0.382" classname="com.vip.paas.e2e.test.ds.cpms.PipelineTest" name="jenkinsSlaveLabels"/>
+  <testcase time="0.313" classname="com.vip.paas.e2e.test.ci.cpms.RolePermissionTest" name="permissionForNone"/>
+  <testcase time="2.838" classname="com.vip.paas.e2e.test.ds.auth.PermissionTest" name="permissionForSuperAdmin"/>
+  <testcase time="2.383" classname="com.vip.paas.e2e.test.ci.cpms.PipelineTest" name="deleteInBatch"/>
+  <testcase time="0.978" classname="com.vip.paas.e2e.test.ci.cpms.RolePermissionTest" name="permissionForMaster"/>
+  <testcase time="1.213" classname="com.vip.paas.e2e.test.ds.cpms.PipelineTest" name="deleteInBatch"/>
+  <testcase time="1.223" classname="com.vip.paas.e2e.test.ds.auth.PermissionTest" name="permissionForMaster">
+    <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.vip.paas.e2e.test.ds.auth.PermissionTest.listAllOrg(PermissionTest.java:160)
+	at com.vip.paas.e2e.test.ds.auth.PermissionTest.permissionForMaster(PermissionTest.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out>[com.vip.paas.e2e.test.ds.cpms.PipelineTest] send request: POST http://ciportal-orgcpms.staging.paas.paas.vip.com/ciplatform/rest/api/orgs/paas/pipelines
+[com.vip.paas.e2e.test.ci.cpms.PipelineTest] {&quot;code&quot;:200,&quot;status&quot;:&quot;OK&quot;,&quot;json_object&quot;:{&quot;name&quot;:&quot;paas.e2e.ci.cpms.pipeline.pipeline554B&quot;,&quot;owners&quot;:[&quot;paasci.builder&quot;],&quot;creator&quot;:&quot;paasci.builder&quot;,&quot;create_time&quot;:&quot;2016-01-19T03:39:49.060587671Z&quot;,&quot;modified_time&quot;:&quot;2016-01-19T03:39:49.060587671Z&quot;,&quot;dev_project&quot;:{&quot;name&quot;:&quot;paas.e2e.ci.cpms.pipeline.pipeline554B&quot;,&quot;repo&quot;:{&quot;scm_type&quot;:&quot;git&quot;,&quot;repo_path&quot;:&quot;http://gitlab.tools.vipshop.com/vip-paas/ci-portal-java.git&quot;,&quot;revision&quot;:&quot;end2end-testcase&quot;,&quot;branch&quot;:&quot;end2end-testcase&quot;,&quot;origin_repo_path&quot;:&quot;git@gitlab.tools.vipshop.com:vip-paas/ci-portal-java.git&quot;},&quot;version&quot;:&quot;1.0.0&quot;,&quot;type&quot;:&quot;maven&quot;,&quot;is_release&quot;:true,&quot;jdk&quot;:&quot;jdk1.7&quot;,&quot;node_label&quot;:&quot;docker-slave&quot;},&quot;period_trigger&quot;:{&quot;id&quot;:&quot;paas.e2e.ci.cpms.pipeline.pipeline554B_Period_Trigger&quot;,&quot;skipped&quot;:false,&quot;trigger_strategy&quot;:&quot;@daily&quot;},&quot;phase_compile_with_static_code_check&quot;:{&quot;id&quot;:&quot;paas.e2e.ci.cpms.pipeline.pipeline554B_Compile_With_Static_Code_Check&quot;,&quot;compile_skipped&quot;:false,&quot;static_code_check_skipped&quot;:true,&quot;maven_config&quot;:{&quot;root_pom&quot;:&quot;pom.xml&quot;,&quot;options&quot;:&quot;-Pproduction&quot;},&quot;static_code_check_config&quot;:{}},&quot;phase_ut_with_coverage&quot;:{&quot;id&quot;:&quot;paas.e2e.ci.cpms.pipeline.pipeline554B_UT_With_Coverage&quot;,&quot;skipped&quot;:false,&quot;coverage_skipped&quot;:false,&quot;maven_config&quot;:{&quot;root_pom&quot;:&quot;pom.xml&quot;,&quot;mvn_opts&quot;:&quot;-Xmx1024m -Xms256m -Xss1024k&quot;},&quot;config&quot;:{&quot;project_key&quot;:&quot;paas.e2e.ci.cpms.pipeline.pipeline554B_ut_coverage&quot;,&quot;project_name&quot;:&quot;paas.e2e.ci.cpms.pipeline.pipeline554B_ut_coverage&quot;,&quot;project_version&quot;:&quot;1.0.0&quot;,&quot;sources&quot;:&quot;src/main/java&quot;,&quot;binaries&quot;:&quot;target/classes&quot;,&quot;java_opts&quot;:&quot;-Xmx1024m -Xms256m -Xss1024k&quot;,&quot;test_sources&quot;:&quot;src/test/java&quot;,&quot;test_report_path&quot;:&quot;target/surefire-reports&quot;,&quot;jacoco_report_path&quot;:&quot;/target/jacoco.exec&quot;,&quot;coverage_plugin&quot;:&quot;jacoco&quot;}},&quot;phase_package&quot;:{&quot;id&quot;:&quot;paas.e2e.ci.cpms.pipeline.pipeline554B_Package&quot;,&quot;packages_domains&quot;:{&quot;ciportal.paas.vip.com&quot;:{&quot;pattern&quot;:&quot;target/*.war&quot;,&quot;is_push_images&quot;:true,&quot;push_images_config&quot;:{}}},&quot;maven_config&quot;:{&quot;root_pom&quot;:&quot;pom.xml&quot;,&quot;options&quot;:&quot;-Pproduction&quot;},&quot;is_keep&quot;:true,&quot;package_post_hooks&quot;:{}},&quot;pipeline_pre_hooks&quot;:{&quot;secret&quot;:&quot;9dtzKJxG&quot;,&quot;gitlab_hook&quot;:{&quot;url&quot;:&quot;http://localhost/p4/ci/ciplatform/rest/pipelines/gitlabhook/paas.e2e.ci.cpms.pipeline.pipeline554B?secret=9dtzKJxG&quot;}},&quot;records&quot;:null,&quot;users&quot;:{&quot;paasci.builder&quot;:&quot;Owner&quot;},&quot;is_send_email&quot;:false,&quot;jenkins_server_url&quot;:&quot;http://jenkins-slave-p5v6a.vclound.com:8080&quot;}}
+[com.vip.paas.e2e.test.ci.cpms.PipelineTest] send request: POST http://ciportal-orgcpms.staging.paas.paas.vip.com/ciplatform/rest/pipelines/paas.e2e.ci.cpms.pipeline.pipeline554A,paas.e2e.ci.cpms.pipeline.pipeline554B,/perform
+[com.vip.paas.e2e.test.ds.auth.PermissionTest] {&quot;code&quot;:200,&quot;status&quot;:&quot;OK&quot;,&quot;json_object&quot;:{&quot;namespace&quot;:&quot;paas-e2e-ds-auth-perm-org554&quot;,&quot;full_name&quot;:&quot;paas-e2e-ds-auth-perm-org554/pipeline/paas.e2e.ds.auth.perm.pipeline554&quot;,&quot;id&quot;:&quot;569db002b8b95dd604a9ab45&quot;,&quot;name&quot;:&quot;paas.e2e.ds.auth.perm.pipeline554&quot;,&quot;owners&quot;:[&quot;paasci.builder&quot;],&quot;creator&quot;:&quot;paasci.builder&quot;,&quot;create_time&quot;:&quot;2016-01-19T03:39:46.159Z&quot;,&quot;modified_time&quot;:&quot;2016-01-19T03:39:46.159Z&quot;,&quot;dev_project&quot;:{&quot;name&quot;:&quot;paas.e2e.ds.auth.perm.pipeline554&quot;,&quot;repo&quot;:{&quot;scm_type&quot;:&quot;git&quot;,&quot;repo_path&quot;:&quot;http://gitlab.tools.vipshop.com/vip-paas/ci-portal-java.git&quot;,&quot;revision&quot;:&quot;end2end-testcase&quot;,&quot;branch&quot;:&quot;end2end-testcase&quot;,&quot;origin_repo_path&quot;:&quot;git@gitlab.tools.vipshop.com:vip-paas/ci-portal-java.git&quot;},&quot;version&quot;:&quot;1.0.0&quot;,&quot;type&quot;:&quot;maven&quot;,&quot;is_release&quot;:true,&quot;jdk&quot;:&quot;jdk1.7&quot;,&quot;node_label&quot;:&quot;docker-slave&quot;},&quot;period_trigger&quot;:{&quot;id&quot;:&quot;paas.e2e.ds.auth.perm.pipeline554_Period_Trigger&quot;,&quot;skipped&quot;:false,&quot;trigger_strategy&quot;:&quot;@daily&quot;},&quot;phase_compile_with_static_code_check&quot;:{&quot;id&quot;:&quot;paas.e2e.ds.auth.perm.pipeline554_Compile_With_Static_Code_Check&quot;,&quot;compile_skipped&quot;:false,&quot;static_code_check_skipped&quot;:true,&quot;maven_config&quot;:{&quot;root_pom&quot;:&quot;pom.xml&quot;,&quot;options&quot;:&quot;-Pproduction&quot;},&quot;static_code_check_config&quot;:{}},&quot;phase_ut_with_coverage&quot;:{&quot;id&quot;:&quot;paas.e2e.ds.auth.perm.pipeline554_UT_With_Coverage&quot;,&quot;skipped&quot;:false,&quot;coverage_skipped&quot;:false,&quot;maven_config&quot;:{&quot;root_pom&quot;:&quot;pom.xml&quot;,&quot;mvn_opts&quot;:&quot;-Xmx1024m -Xms256m -Xss1024k&quot;},&quot;config&quot;:{&quot;project_key&quot;:&quot;paas.e2e.ds.auth.perm.pipeline554_ut_coverage&quot;,&quot;project_name&quot;:&quot;paas.e2e.ds.auth.perm.pipeline554_ut_coverage&quot;,&quot;project_version&quot;:&quot;1.0.0&quot;,&quot;sources&quot;:&quot;src/main/java&quot;,&quot;binaries&quot;:&quot;target/classes&quot;,&quot;java_opts&quot;:&quot;-Xmx1024m -Xms256m -Xss1024k&quot;,&quot;test_sources&quot;:&quot;src/test/java&quot;,&quot;test_report_path&quot;:&quot;target/surefire-reports&quot;,&quot;jacoco_report_path&quot;:&quot;/target/jacoco.exec&quot;,&quot;coverage_plugin&quot;:&quot;jacoco&quot;}},&quot;phase_package&quot;:{&quot;id&quot;:&quot;paas.e2e.ds.auth.perm.pipeline554_Package&quot;,&quot;packages_domains&quot;:{&quot;ciportal.paas.vip.com&quot;:{&quot;pattern&quot;:&quot;target/*.war&quot;,&quot;is_push_images&quot;:true,&quot;push_images_config&quot;:{}}},&quot;maven_config&quot;:{&quot;root_pom&quot;:&quot;pom.xml&quot;,&quot;options&quot;:&quot;-Pproduction&quot;},&quot;is_keep&quot;:true,&quot;package_post_hooks&quot;:{}},&quot;pipeline_pre_hooks&quot;:{&quot;secret&quot;:&quot;iRwz6kp5&quot;,&quot;gitlab_hook&quot;:{&quot;url&quot;:&quot;http://localhost/p4/ci/ciplatform/rest/pipelines/gitlabhook/paas.e2e.ds.auth.perm.pipeline554?secret=iRwz6kp5&quot;}},&quot;records&quot;:[],&quot;users&quot;:{&quot;paasci.builder&quot;:&quot;Owner&quot;},&quot;is_send_email&quot;:false,&quot;jenkins_server_url&quot;:&quot;http://jenkins-slave-p5v6a.vclound.com:8080&quot;}}
+[com.vip.paas.e2e.test.ds.auth.PermissionTest] send request: DELETE http://ciportal-orgcpms.staging.paas.paas.vip.com/ciplatform/rest/orgs/paas-e2e-ds-auth-perm-org554/spaces/paas-e2e-ds-auth-perm-space554
+[com.vip.paas.e2e.test.ds.auth.PermissionTest] {&quot;code&quot;:404,&quot;message&quot;:&quot;Cannot find any space by paas-e2e-ds-auth-perm-org554/paas-e2e-ds-auth-perm-space554.&quot;}
+[com.vip.paas.e2e.test.ds.auth.PermissionTest] send request: DELETE http://ciportal-orgcpms.staging.paas.paas.vip.com/ciplatform/rest/orgs/paas-e2e-ds-auth-perm-org554
+[com.vip.paas.e2e.test.ds.cpms.PipelineTest] {&quot;code&quot;:200,&quot;status&quot;:&quot;OK&quot;,&quot;json_object&quot;:{&quot;namespace&quot;:&quot;paas&quot;,&quot;full_name&quot;:&quot;paas/pipeline/paas.e2e.ds.cpms.pipeline.pipeline554A&quot;,&quot;name&quot;:&quot;paas.e2e.ds.cpms.pipeline.pipeline554A&quot;,&quot;owners&quot;:[&quot;paasci.builder&quot;],&quot;creator&quot;:&quot;paasci.builder&quot;,&quot;create_time&quot;:&quot;2016-01-19T03:39:49.368520917Z&quot;,&quot;modified_time&quot;:&quot;2016-01-19T03:39:49.368520917Z&quot;,&quot;dev_project&quot;:{&quot;name&quot;:&quot;paas.e2e.ds.cpms.pipeline.pipeline554A&quot;,&quot;repo&quot;:{&quot;scm_type&quot;:&quot;git&quot;,&quot;repo_path&quot;:&quot;http://gitlab.tools.vipshop.com/vip-paas/ci-portal-java.git&quot;,&quot;revision&quot;:&quot;end2end-testcase&quot;,&quot;branch&quot;:&quot;end2end-testcase&quot;,&quot;origin_repo_path&quot;:&quot;git@gitlab.tools.vipshop.com:vip-paas/ci-portal-java.git&quot;},&quot;version&quot;:&quot;1.0.0&quot;,&quot;type&quot;:&quot;maven&quot;,&quot;is_release&quot;:true,&quot;jdk&quot;:&quot;jdk1.7&quot;,&quot;node_label&quot;:&quot;docker-slave&quot;},&quot;period_trigger&quot;:{&quot;id&quot;:&quot;paas.e2e.ds.cpms.pipeline.pipeline554A_Period_Trigger&quot;,&quot;skipped&quot;:false,&quot;trigger_strategy&quot;:&quot;@daily&quot;},&quot;phase_compile_with_static_code_check&quot;:{&quot;id&quot;:&quot;paas.e2e.ds.cpms.pipeline.pipeline554A_Compile_With_Static_Code_Check&quot;,&quot;compile_skipped&quot;:false,&quot;static_code_check_skipped&quot;:true,&quot;maven_config&quot;:{&quot;root_pom&quot;:&quot;pom.xml&quot;,&quot;options&quot;:&quot;-Pproduction&quot;},&quot;static_code_check_config&quot;:{}},&quot;phase_ut_with_coverage&quot;:{&quot;id&quot;:&quot;paas.e2e.ds.cpms.pipeline.pipeline554A_UT_With_Coverage&quot;,&quot;skipped&quot;:false,&quot;coverage_skipped&quot;:false,&quot;maven_config&quot;:{&quot;root_pom&quot;:&quot;pom.xml&quot;,&quot;mvn_opts&quot;:&quot;-Xmx1024m -Xms256m -Xss1024k&quot;},&quot;config&quot;:{&quot;project_key&quot;:&quot;paas.e2e.ds.cpms.pipeline.pipeline554A_ut_coverage&quot;,&quot;project_name&quot;:&quot;paas.e2e.ds.cpms.pipeline.pipeline554A_ut_coverage&quot;,&quot;project_version&quot;:&quot;1.0.0&quot;,&quot;sources&quot;:&quot;src/main/java&quot;,&quot;binaries&quot;:&quot;target/classes&quot;,&quot;java_opts&quot;:&quot;-Xmx1024m -Xms256m -Xss1024k&quot;,&quot;test_sources&quot;:&quot;src/test/java&quot;,&quot;test_report_path&quot;:&quot;target/surefire-reports&quot;,&quot;jacoco_report_path&quot;:&quot;/target/jacoco.exec&quot;,&quot;coverage_plugin&quot;:&quot;jacoco&quot;}},&quot;phase_package&quot;:{&quot;id&quot;:&quot;paas.e2e.ds.cpms.pipeline.pipeline554A_Package&quot;,&quot;packages_domains&quot;:{&quot;ciportal.paas.vip.com&quot;:{&quot;pattern&quot;:&quot;target/*.war&quot;,&quot;is_push_images&quot;:true,&quot;push_images_config&quot;:{}}},&quot;maven_config&quot;:{&quot;root_pom&quot;:&quot;pom.xml&quot;,&quot;options&quot;:&quot;-Pproduction&quot;},&quot;is_keep&quot;:true,&quot;package_post_hooks&quot;:{}},&quot;pipeline_pre_hooks&quot;:{&quot;secret&quot;:&quot;1E59uhBn&quot;,&quot;gitlab_hook&quot;:{&quot;url&quot;:&quot;http://localhost/p4/ci/ciplatform/rest/pipelines/gitlabhook/paas.e2e.ds.cpms.pipeline.pipeline554A?secret=1E59uhBn&quot;}},&quot;records&quot;:null,&quot;users&quot;:{&quot;paasci.builder&quot;:&quot;Owner&quot;},&quot;is_send_email&quot;:false,&quot;jenkins_server_url&quot;:&quot;http://jenkins-slave-p5v6a.vclound.com:8080&quot;}}
+[com.vip.paas.e2e.test.ds.auth.PermissionTest] {&quot;code&quot;:200,&quot;status&quot;:&quot;OK&quot;,&quot;json_object&quot;:{&quot;_id&quot;:&quot;569db001be9b6d0001000005&quot;,&quot;name&quot;:&quot;paas-e2e-ds-auth-perm-org554&quot;,&quot;display_name&quot;:&quot;e2e-test-perm&quot;,&quot;created_time&quot;:&quot;2016-01-19T03:39:45.86Z&quot;,&quot;modified_time&quot;:&quot;2016-01-19T03:39:45.86Z&quot;}}
+[com.vip.paas.e2e.test.ds.auth.PermissionTest] send request: DELETE http://ciportal-orgcpms.staging.paas.paas.vip.com/ciplatform/rest/orgs/paas-e2e-ds-auth-perm-org554A
+[com.vip.paas.e2e.test.ds.cpms.PipelineTest] send request: POST http://ciportal-orgcpms.staging.paas.paas.vip.com/ciplatform/rest/api/orgs/paas/pipelines
+[com.vip.paas.e2e.test.ci.cpms.PipelineTest] {&quot;code&quot;:200,&quot;result&quot;:&quot;paas.e2e.ci.cpms.pipeline.pipeline554A,paas.e2e.ci.cpms.pipeline.pipeline554B,&quot;,&quot;message&quot;:&quot;Success to trigger records.&quot;}
+[com.vip.paas.e2e.test.ci.cpms.PipelineTest] send request: DELETE http://ciportal-orgcpms.staging.paas.paas.vip.com/ciplatform/rest/pipelines/paas.e2e.ci.cpms.pipeline.pipeline554A
+[com.vip.paas.e2e.test.ds.auth.PermissionTest] {&quot;code&quot;:200,&quot;status&quot;:&quot;OK&quot;,&quot;json_object&quot;:{&quot;_id&quot;:&quot;569db003be9b6d0001000008&quot;,&quot;name&quot;:&quot;paas-e2e-ds-auth-perm-org554A&quot;,&quot;display_name&quot;:&quot;e2e-testA&quot;,&quot;created_time&quot;:&quot;2016-01-19T03:39:47.085Z&quot;,&quot;modified_time&quot;:&quot;2016-01-19T03:39:47.085Z&quot;}}
+</system-out>
+  </testcase>
+  <testcase time="3.499" classname="com.vip.paas.e2e.test.ci.cpms.PhpTest" name="trigger"/>
+  <testcase time="5.44" classname="com.vip.paas.e2e.test.ci.cpms.PipelineTest" name="triggerInBatch"/>
+  <testcase time="6.629" classname="com.vip.paas.e2e.test.ds.cpms.PipelineTest" name="triggerInBatch"/>
+  <testcase time="166.092" classname="com.vip.paas.e2e.test.ci.cpms.GradleTest" name="trigger"/>
+  <testcase time="321.363" classname="com.vip.paas.e2e.test.ci.cpms.RecordTest" name="recordOperation"/>
+</testsuite>

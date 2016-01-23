@@ -1,0 +1,56 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>{{.Name}} - Test Report</title>
+	<style type="text/css" media="all">
+{{template "maven_base.css"}}
+{{template "maven_theme.css"}}
+{{template "print.css"}}
+{{template "site.css"}}
+	</style>
+	<meta http-equiv="Content-Language" content="en">
+	<script>
+{{template "main.js"}}
+	</script>
+</head>
+<body class="composite" onload="initPreWidth()">
+	<div id="banner">
+		<div id="bannerLeft">{{.Name}}</div>
+		<div class="clear">
+			<hr>
+		</div>
+	</div>
+	<div id="breadcrumbs">
+
+
+		<div class="xleft">
+			<span id="publishDate">Last Published: {{.Date}}</span>
+		</div>
+		<div class="xright">
+			<a href="./" title="platformng-e2e-test">{{.Name}}</a>
+
+
+		</div>
+		<div class="clear">
+			<hr>
+		</div>
+	</div>
+
+	<div id="bodyColumn">
+		<div id="contentBox">
+			<div class="section">
+				<h2>
+					Test Report - {{.Name}}<a name="Surefire_Report"></a>
+				</h2>
+			</div>
+			{{template "summary.html" .}}
+			{{template "packages.html" .}}
+			{{template "testcase.html" .}}
+			{{template "failure_detail.html" .}}
+		</div>
+	</div>
+	<div class="clear">
+		<hr>
+	</div>
+</body>
+</html>

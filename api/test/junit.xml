@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <testsuite tests="7" failures="0" time="0.060003400000000005">
+      <testcase name="Type should support parsing xml file" classname="api Suite" time="0"></testcase>
+      <testcase name="Type should support some method" classname="api Suite" time="0"></testcase>
+      <testcase name="Type should support aggregation" classname="api Suite" time="0.001"></testcase>
+      <testcase name="Template should support parse to summary template" classname="api Suite" time="0"></testcase>
+      <testcase name="Template should support parse to package template" classname="api Suite" time="0.0030002"></testcase>
+      <testcase name="Template should support parse to testcase template" classname="api Suite" time="0.0200011"></testcase>
+      <testcase name="Template should support parse to failure detail template" classname="api Suite" time="0.0010001"></testcase>
+  </testsuite>

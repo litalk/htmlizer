@@ -1,0 +1,73 @@
+<div class="section">
+	<h2>
+		Package List<a name="Package_List"></a>
+	</h2>
+	<a name="Package_List"></a>
+	<p>
+		[<a href="#Summary">Summary</a>] [<a href="#Package_List">Package
+			List</a>] [<a href="#Test_Cases">Test Cases</a>]
+	</p>
+	<br>
+	<table border="1" class="bodyTable">
+		<tbody>
+			<tr class="a">
+				<th>Package</th>
+				<th>Tests</th>
+				<th>Errors</th>
+				<th>Failures</th>
+				<th>Skipped</th>
+				<th>Success Rate</th>
+				<th>Time</th>
+			</tr>
+			{{range $index, $pkg := .Packages}}
+				<tr class="{{if isOdd $index}}a{{else}}b{{end}}">
+					<td><a href="#{{.Name}}">{{.Name}}</a></td>
+					<td>{{.Tests}}</td>
+					<td>{{.Errors}}</td>
+					<td>{{.Failures}}</td>
+					<td>{{.Skipped}}</td>
+					<td>{{.SuccessRate}}</td>
+					<td>{{formateFloatStr .Time}}</td>
+				</tr>
+			{{end}}
+		</tbody>
+	</table>
+	<br>
+	<p>Note: package statistics are not computed recursively, they only
+		sum up all of its testsuites numbers.</p>
+	{{range .Packages}}
+		<div class="section">
+			<h3>
+				{{.Name}}<a name="{{.Name}}"></a>
+			</h3>
+			<a name="{{.Name}}"></a>
+			<table border="1" class="bodyTable">
+				<tbody>
+					<tr class="a">
+						<th></th>
+						<th>Class</th>
+						<th>Tests</th>
+						<th>Errors</th>
+						<th>Failures</th>
+						<th>Skipped</th>
+						<th>Success Rate</th>
+						<th>Time</th>
+					</tr>
+					{{range $index, $class := .Classes}}
+						<tr class="{{if isOdd $index}}a{{else}}b{{end}}">
+							<td><a href="#{{.Name}}">{{resultSymbol .}}</a></td>
+							<td><a href="#{{.Name}}">{{.SimpleName}}</a></td>
+							<td>{{.Tests}}</td>
+							<td>{{.Errors}}</td>
+							<td>{{.Failures}}</td>
+							<td>{{.Skipped}}</td>
+							<td>{{.SuccessRate}}</td>
+							<td>{{formateFloatStr .Time}}</td>
+						</tr>
+					{{end}}
+				</tbody>
+			</table>
+		</div>
+	{{end}}
+	<br>
+</div>

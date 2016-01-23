@@ -65,7 +65,6 @@ func main() {
 	t := api.Template()
 
 	for _, f := range matches {
-		fmt.Println(f)
 		if !strings.HasSuffix(f, ".xml") {
 			continue
 		}

@@ -1,0 +1,1645 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>com.vip.paas.e2e.suite.All - Test Report</title>
+	<style type="text/css" media="all">
+body {
+  margin: 0px;
+  padding: 0px;
+}
+img {
+  border:none;
+}
+table {
+  padding:0px;
+  width: 100%;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+acronym {
+  cursor: help;
+  border-bottom: 1px dotted #feb;
+}
+table.bodyTable th, table.bodyTable td {
+  padding: 2px 4px 2px 4px;
+  vertical-align: top;
+}
+div.clear{
+  clear:both;
+  visibility: hidden;
+}
+div.clear hr{
+  display: none;
+}
+#bannerLeft, #bannerRight {
+  font-size: xx-large;
+  font-weight: bold;
+}
+#bannerLeft img, #bannerRight img {
+  margin: 0px;
+}
+.xleft, #bannerLeft img {
+  float:left;
+}
+.xright, #bannerRight {
+  float:right;
+}
+#banner {
+  padding: 0px;
+}
+#banner img {
+  border: none;
+}
+#breadcrumbs {
+  padding: 3px 10px 3px 10px;
+}
+#leftColumn {
+ width: 170px;
+ float:left;
+ overflow: auto;
+}
+#bodyColumn {
+  margin-right: 1.5em;
+  margin-left: 197px;
+}
+#legend {
+  padding: 8px 0 8px 0;
+}
+#navcolumn {
+  padding: 8px 4px 0 8px;
+}
+#navcolumn h5 {
+  margin: 0;
+  padding: 0;
+  font-size: small;
+}
+#navcolumn ul {
+  margin: 0;
+  padding: 0;
+  font-size: small;
+}
+#navcolumn li {
+  list-style-type: none;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: 0 0.4em;
+  padding-left: 16px;
+  list-style-position: outside;
+  line-height: 1.2em;
+  font-size: smaller;
+}
+#navcolumn li.expanded {
+  background-image: url(../images/expanded.gif);
+}
+#navcolumn li.collapsed {
+  background-image: url(../images/collapsed.gif);
+}
+#navcolumn li.none {
+  text-indent: -1em;
+  margin-left: 1em;
+}
+#poweredBy {
+  text-align: center;
+}
+#navcolumn img {
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+#poweredBy img {
+  display:block;
+  margin: 20px 0 20px 17px;
+}
+#search img {
+    margin: 0px;
+    display: block;
+}
+#search #q, #search #btnG {
+    border: 1px solid #999;
+    margin-bottom:10px;
+}
+#search form {
+    margin: 0px;
+}
+#lastPublished {
+  font-size: x-small;
+}
+.navSection {
+  margin-bottom: 2px;
+  padding: 8px;
+}
+.navSectionHead {
+  font-weight: bold;
+  font-size: x-small;
+}
+.section {
+  padding: 4px;
+}
+#footer {
+  padding: 3px 10px 3px 10px;
+  font-size: x-small;
+}
+#breadcrumbs {
+  font-size: x-small;
+  margin: 0pt;
+}
+.source {
+  padding: 12px;
+  margin: 1em 7px 1em 7px;
+}
+.source pre {
+  margin: 0px;
+  padding: 0px;
+}
+#navcolumn img.imageLink, .imageLink {
+  padding-left: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-right: 2px;
+  border: 0px;
+  margin: 0px;
+}
+
+body {
+  padding: 0px 0px 10px 0px;
+}
+body, td, select, input, li{
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+}
+code{
+  font-family: Courier, monospace;
+  font-size: 13px;
+}
+a {
+  text-decoration: none;
+}
+a:link {
+  color:#36a;
+}
+a:visited  {
+  color:#47a;
+}
+a:active, a:hover {
+  color:#69c;
+}
+#legend li.externalLink {
+  background: url(../images/external.png) left top no-repeat;
+  padding-left: 18px;
+}
+a.externalLink, a.externalLink:link, a.externalLink:visited, a.externalLink:active, a.externalLink:hover {
+  background: url(../images/external.png) right center no-repeat;
+  padding-right: 18px;
+}
+#legend li.newWindow {
+  background: url(../images/newwindow.png) left top no-repeat;
+  padding-left: 18px;
+}
+a.newWindow, a.newWindow:link, a.newWindow:visited, a.newWindow:active, a.newWindow:hover {
+  background: url(../images/newwindow.png) right center no-repeat;
+  padding-right: 18px;
+}
+h2 {
+  padding: 4px 4px 4px 6px;
+  border: 1px solid #999;
+  color: #900;
+  background-color: #ddd;
+  font-weight:900;
+  font-size: x-large;
+}
+h3 {
+  padding: 4px 4px 4px 6px;
+  border: 1px solid #aaa;
+  color: #900;
+  background-color: #eee;
+  font-weight: normal;
+  font-size: large;
+}
+h4 {
+  padding: 4px 4px 4px 6px;
+  border: 1px solid #bbb;
+  color: #900;
+  background-color: #fff;
+  font-weight: normal;
+  font-size: large;
+}
+h5 {
+  padding: 4px 4px 4px 6px;
+  color: #900;
+  font-size: normal;
+}
+p {
+  line-height: 1.3em;
+  font-size: small;
+}
+#breadcrumbs {
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  background-color: #ccc;
+}
+#leftColumn {
+  margin: 10px 0 0 5px;
+  border: 1px solid #999;
+  background-color: #eee;
+}
+#navcolumn h5 {
+  font-size: smaller;
+  border-bottom: 1px solid #aaaaaa;
+  padding-top: 2px;
+  color: #000;
+}
+
+table.bodyTable th {
+  color: white;
+  background-color: #bbb;
+  text-align: left;
+  font-weight: bold;
+}
+
+table.bodyTable th, table.bodyTable td {
+  font-size: 1em;
+}
+
+table.bodyTable tr.a {
+  background-color: #ddd;
+}
+
+table.bodyTable tr.b {
+  background-color: #eee;
+}
+
+.source {
+  border: 1px solid #999;
+}
+dl {
+  padding: 4px 4px 4px 6px;
+  border: 1px solid #aaa;
+  background-color: #ffc;
+}
+dt {
+  color: #900;
+}
+#organizationLogo img, #projectLogo img, #projectLogo span{
+  margin: 8px;
+}
+#banner {
+  border-bottom: 1px solid #fff;
+}
+.errormark, .warningmark, .donemark, .infomark {
+  background: url(../images/icon_error_sml.gif) no-repeat;
+}
+
+.warningmark {
+  background-image: url(../images/icon_warning_sml.gif);
+}
+
+.donemark {
+  background-image: url(../images/icon_success_sml.gif);
+}
+
+.infomark {
+  background-image: url(../images/icon_info_sml.gif);
+}
+
+
+#banner, #footer, #leftcol, #breadcrumbs, .docs #toc, .docs .courtesylinks, #leftColumn, #navColumn {
+	display: none !important;
+}
+#bodyColumn, body.docs div.docs {
+	margin: 0 !important;
+	border: none !important
+}
+
+ 
+body {
+	padding-left: 5%;
+	padding-right:5%;
+}
+
+pre {
+	 word-wrap:break-word;
+	 width:600px;
+}
+
+table.bodyTable th, table.bodyTable td {
+	vertical-align: middle;
+	font-size: 15px;
+}
+	</style>
+	<meta http-equiv="Content-Language" content="en">
+	<script>
+
+function toggleDisplay(elementId) {
+	var elm = document.getElementById(elementId + 'error');
+	if (elm && typeof elm.style != "undefined") {
+		if (elm.style.display == "none") {
+			elm.style.display = "";
+			document.getElementById(elementId + 'off').style.display = "none";
+			document.getElementById(elementId + 'on').style.display = "inline";
+		} else if (elm.style.display == "") {
+			elm.style.display = "none";
+			document.getElementById(elementId + 'off').style.display = "inline";
+			document.getElementById(elementId + 'on').style.display = "none";
+		}
+	}
+}
+
+
+function initPreWidth() {
+	var tds =  document.getElementsByName('testcase_name');
+	if (tds.length <= 0) {
+		return;
+	}
+	
+	var width = tds[0].offsetWidth + "px";
+	var pres = document.getElementsByTagName('pre');
+	for (var i = 0 ; i < pres.length ; ++i) {
+		pres[i].style.width = width;
+	}
+}
+	</script>
+</head>
+<body class="composite" onload="initPreWidth()">
+	<div id="banner">
+		<div id="bannerLeft">com.vip.paas.e2e.suite.All</div>
+		<div class="clear">
+			<hr>
+		</div>
+	</div>
+	<div id="breadcrumbs">
+
+
+		<div class="xleft">
+			<span id="publishDate">Last Published: 2016-01-23 13:21:51</span>
+		</div>
+		<div class="xright">
+			<a href="./" title="platformng-e2e-test">com.vip.paas.e2e.suite.All</a>
+
+
+		</div>
+		<div class="clear">
+			<hr>
+		</div>
+	</div>
+
+	<div id="bodyColumn">
+		<div id="contentBox">
+			<div class="section">
+				<h2>
+					Test Report - com.vip.paas.e2e.suite.All<a name="Surefire_Report"></a>
+				</h2>
+			</div>
+			<div class="section">
+	<h2>
+		Summary
+		<a name="Summary"></a>
+	</h2>
+	<a name="Summary"></a>
+	<p>
+		[
+		<a href="#Summary">Summary</a>
+		] [
+		<a href="#Package_List">Package List</a>
+		] [
+		<a href="#Test_Cases">Test Cases</a>
+		]
+	</p>
+	<br/>
+	<table border="1" class="bodyTable">
+		<tbody>
+			<tr class="a">
+				<th>Tests</th>
+				<th>Errors </th>
+				<th>Failures</th>
+				<th>Skipped</th>
+				<th>Success Rate</th>
+				<th>Time</th>
+			</tr>
+			<tr class="b">
+				<td>57</td>
+				<td>1</td>
+				<td>1</td>
+				<td>2</td>
+				<td>92.982%</td>
+				<td>540.554</td>
+			</tr>
+		</tbody>
+	</table>
+	<br/>
+		<p>Note: failures are anticipated and checked for with assertions
+			while errors are unanticipated.</p>
+	<br/>
+</div>
+			<div class="section">
+	<h2>
+		Package List<a name="Package_List"></a>
+	</h2>
+	<a name="Package_List"></a>
+	<p>
+		[<a href="#Summary">Summary</a>] [<a href="#Package_List">Package
+			List</a>] [<a href="#Test_Cases">Test Cases</a>]
+	</p>
+	<br>
+	<table border="1" class="bodyTable">
+		<tbody>
+			<tr class="a">
+				<th>Package</th>
+				<th>Tests</th>
+				<th>Errors</th>
+				<th>Failures</th>
+				<th>Skipped</th>
+				<th>Success Rate</th>
+				<th>Time</th>
+			</tr>
+			
+				<tr class="b">
+					<td><a href="#com.vip.paas.e2e.test.ds.cpms">com.vip.paas.e2e.test.ds.cpms</a></td>
+					<td>9</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>100.000%</td>
+					<td>12.239</td>
+				</tr>
+			
+				<tr class="a">
+					<td><a href="#com.vip.paas.e2e.test.ci.cpms">com.vip.paas.e2e.test.ci.cpms</a></td>
+					<td>32</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>100.000%</td>
+					<td>516.749</td>
+				</tr>
+			
+				<tr class="b">
+					<td><a href="#com.vip.paas.e2e.test.ds.auth">com.vip.paas.e2e.test.ds.auth</a></td>
+					<td>16</td>
+					<td>1</td>
+					<td>1</td>
+					<td>2</td>
+					<td>75.000%</td>
+					<td>11.566</td>
+				</tr>
+			
+		</tbody>
+	</table>
+	<br>
+	<p>Note: package statistics are not computed recursively, they only
+		sum up all of its testsuites numbers.</p>
+	
+		<div class="section">
+			<h3>
+				com.vip.paas.e2e.test.ds.cpms<a name="com.vip.paas.e2e.test.ds.cpms"></a>
+			</h3>
+			<a name="com.vip.paas.e2e.test.ds.cpms"></a>
+			<table border="1" class="bodyTable">
+				<tbody>
+					<tr class="a">
+						<th></th>
+						<th>Class</th>
+						<th>Tests</th>
+						<th>Errors</th>
+						<th>Failures</th>
+						<th>Skipped</th>
+						<th>Success Rate</th>
+						<th>Time</th>
+					</tr>
+					
+						<tr class="b">
+							<td><a href="#com.vip.paas.e2e.test.ds.cpms.PipelineTest"><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></a></td>
+							<td><a href="#com.vip.paas.e2e.test.ds.cpms.PipelineTest">PipelineTest</a></td>
+							<td>9</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>100.000%</td>
+							<td>12.239</td>
+						</tr>
+					
+				</tbody>
+			</table>
+		</div>
+	
+		<div class="section">
+			<h3>
+				com.vip.paas.e2e.test.ci.cpms<a name="com.vip.paas.e2e.test.ci.cpms"></a>
+			</h3>
+			<a name="com.vip.paas.e2e.test.ci.cpms"></a>
+			<table border="1" class="bodyTable">
+				<tbody>
+					<tr class="a">
+						<th></th>
+						<th>Class</th>
+						<th>Tests</th>
+						<th>Errors</th>
+						<th>Failures</th>
+						<th>Skipped</th>
+						<th>Success Rate</th>
+						<th>Time</th>
+					</tr>
+					
+						<tr class="b">
+							<td><a href="#com.vip.paas.e2e.test.ci.cpms.RolePermissionTest"><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></a></td>
+							<td><a href="#com.vip.paas.e2e.test.ci.cpms.RolePermissionTest">RolePermissionTest</a></td>
+							<td>5</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>100.000%</td>
+							<td>3.732</td>
+						</tr>
+					
+						<tr class="a">
+							<td><a href="#com.vip.paas.e2e.test.ci.cpms.GradleTest"><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></a></td>
+							<td><a href="#com.vip.paas.e2e.test.ci.cpms.GradleTest">GradleTest</a></td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>100.000%</td>
+							<td>166.092</td>
+						</tr>
+					
+						<tr class="b">
+							<td><a href="#com.vip.paas.e2e.test.ci.cpms.RoleTest"><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></a></td>
+							<td><a href="#com.vip.paas.e2e.test.ci.cpms.RoleTest">RoleTest</a></td>
+							<td>5</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>100.000%</td>
+							<td>1.668</td>
+						</tr>
+					
+						<tr class="a">
+							<td><a href="#com.vip.paas.e2e.test.ci.cpms.PipelineTest"><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></a></td>
+							<td><a href="#com.vip.paas.e2e.test.ci.cpms.PipelineTest">PipelineTest</a></td>
+							<td>9</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>100.000%</td>
+							<td>14.317</td>
+						</tr>
+					
+						<tr class="b">
+							<td><a href="#com.vip.paas.e2e.test.ci.cpms.RecordTest"><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></a></td>
+							<td><a href="#com.vip.paas.e2e.test.ci.cpms.RecordTest">RecordTest</a></td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>100.000%</td>
+							<td>321.363</td>
+						</tr>
+					
+						<tr class="a">
+							<td><a href="#com.vip.paas.e2e.test.ci.cpms.GroupTest"><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></a></td>
+							<td><a href="#com.vip.paas.e2e.test.ci.cpms.GroupTest">GroupTest</a></td>
+							<td>5</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>100.000%</td>
+							<td>4.254</td>
+						</tr>
+					
+						<tr class="b">
+							<td><a href="#com.vip.paas.e2e.test.ci.cpms.UserTest"><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></a></td>
+							<td><a href="#com.vip.paas.e2e.test.ci.cpms.UserTest">UserTest</a></td>
+							<td>5</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>100.000%</td>
+							<td>1.824</td>
+						</tr>
+					
+						<tr class="a">
+							<td><a href="#com.vip.paas.e2e.test.ci.cpms.PhpTest"><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></a></td>
+							<td><a href="#com.vip.paas.e2e.test.ci.cpms.PhpTest">PhpTest</a></td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>100.000%</td>
+							<td>3.499</td>
+						</tr>
+					
+				</tbody>
+			</table>
+		</div>
+	
+		<div class="section">
+			<h3>
+				com.vip.paas.e2e.test.ds.auth<a name="com.vip.paas.e2e.test.ds.auth"></a>
+			</h3>
+			<a name="com.vip.paas.e2e.test.ds.auth"></a>
+			<table border="1" class="bodyTable">
+				<tbody>
+					<tr class="a">
+						<th></th>
+						<th>Class</th>
+						<th>Tests</th>
+						<th>Errors</th>
+						<th>Failures</th>
+						<th>Skipped</th>
+						<th>Success Rate</th>
+						<th>Time</th>
+					</tr>
+					
+						<tr class="b">
+							<td><a href="#com.vip.paas.e2e.test.ds.auth.PermissionTest"><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:F39F3D;border:0px solid black;margin-left:1px;margin-right:1px"></span></a></td>
+							<td><a href="#com.vip.paas.e2e.test.ds.auth.PermissionTest">PermissionTest</a></td>
+							<td>4</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>75.000%</td>
+							<td>9.703</td>
+						</tr>
+					
+						<tr class="a">
+							<td><a href="#com.vip.paas.e2e.test.ds.auth.RoleTest"><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></a></td>
+							<td><a href="#com.vip.paas.e2e.test.ds.auth.RoleTest">RoleTest</a></td>
+							<td>3</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>100.000%</td>
+							<td>0.165</td>
+						</tr>
+					
+						<tr class="b">
+							<td><a href="#com.vip.paas.e2e.test.ds.auth.OrgSpaceTest"><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#E4443B;border:0px solid black;margin-left:1px;margin-right:1px"></span></a></td>
+							<td><a href="#com.vip.paas.e2e.test.ds.auth.OrgSpaceTest">OrgSpaceTest</a></td>
+							<td>6</td>
+							<td>1</td>
+							<td>0</td>
+							<td>2</td>
+							<td>50.000%</td>
+							<td>0.891</td>
+						</tr>
+					
+						<tr class="a">
+							<td><a href="#com.vip.paas.e2e.test.ds.auth.UserTest"><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></a></td>
+							<td><a href="#com.vip.paas.e2e.test.ds.auth.UserTest">UserTest</a></td>
+							<td>3</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>100.000%</td>
+							<td>0.807</td>
+						</tr>
+					
+				</tbody>
+			</table>
+		</div>
+	
+	<br>
+</div>
+			<div class="section">
+	<h2>
+		Test Cases<a name="Test_Cases"></a>
+	</h2>
+	<a name="Test_Cases"></a>
+	<p>
+		[<a href="#Summary">Summary</a>] [<a href="#Package_List">Package
+			List</a>] [<a href="#Test_Cases">Test Cases</a>]
+	</p>
+	
+		
+			<div class="section">
+				<h3>
+					PipelineTest<a name="PipelineTest"></a>
+				</h3>
+				<a name="com.vip.paas.e2e.test.ds.cpms.PipelineTest"></a>
+				<table border="1" class="bodyTable">
+					<tbody>
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ds.cpms.PipelineTest.create"></a>create</td>
+									<td>0.011</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="a">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ds.cpms.PipelineTest.delete"></a>delete</td>
+									<td>0.004</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ds.cpms.PipelineTest.update"></a>update</td>
+									<td>0.895</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="a">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ds.cpms.PipelineTest.autoComplete"></a>autoComplete</td>
+									<td>1.914</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ds.cpms.PipelineTest.list"></a>list</td>
+									<td>0.372</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="a">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ds.cpms.PipelineTest.view"></a>view</td>
+									<td>0.819</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ds.cpms.PipelineTest.jenkinsSlaveLabels"></a>jenkinsSlaveLabels</td>
+									<td>0.382</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="a">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ds.cpms.PipelineTest.deleteInBatch"></a>deleteInBatch</td>
+									<td>1.213</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ds.cpms.PipelineTest.triggerInBatch"></a>triggerInBatch</td>
+									<td>6.629</td>
+								</tr>
+							
+						
+					</tbody>
+				</table>
+			</div>
+		
+	
+		
+			<div class="section">
+				<h3>
+					RolePermissionTest<a name="RolePermissionTest"></a>
+				</h3>
+				<a name="com.vip.paas.e2e.test.ci.cpms.RolePermissionTest"></a>
+				<table border="1" class="bodyTable">
+					<tbody>
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.RolePermissionTest.permissionForGuest"></a>permissionForGuest</td>
+									<td>0.859</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="a">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.RolePermissionTest.permissionForOwner"></a>permissionForOwner</td>
+									<td>1.146</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.RolePermissionTest.permissionForDeveloper"></a>permissionForDeveloper</td>
+									<td>0.436</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="a">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.RolePermissionTest.permissionForNone"></a>permissionForNone</td>
+									<td>0.313</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.RolePermissionTest.permissionForMaster"></a>permissionForMaster</td>
+									<td>0.978</td>
+								</tr>
+							
+						
+					</tbody>
+				</table>
+			</div>
+		
+			<div class="section">
+				<h3>
+					GradleTest<a name="GradleTest"></a>
+				</h3>
+				<a name="com.vip.paas.e2e.test.ci.cpms.GradleTest"></a>
+				<table border="1" class="bodyTable">
+					<tbody>
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.GradleTest.trigger"></a>trigger</td>
+									<td>166.092</td>
+								</tr>
+							
+						
+					</tbody>
+				</table>
+			</div>
+		
+			<div class="section">
+				<h3>
+					RoleTest<a name="RoleTest"></a>
+				</h3>
+				<a name="com.vip.paas.e2e.test.ci.cpms.RoleTest"></a>
+				<table border="1" class="bodyTable">
+					<tbody>
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.RoleTest.create"></a>create</td>
+									<td>0.023</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="a">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.RoleTest.remove"></a>remove</td>
+									<td>0.455</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.RoleTest.update"></a>update</td>
+									<td>0.164</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="a">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.RoleTest.canNotRemoveHigherRole"></a>canNotRemoveHigherRole</td>
+									<td>0.071</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.RoleTest.canNotUpdateHigherRole"></a>canNotUpdateHigherRole</td>
+									<td>0.955</td>
+								</tr>
+							
+						
+					</tbody>
+				</table>
+			</div>
+		
+			<div class="section">
+				<h3>
+					PipelineTest<a name="PipelineTest"></a>
+				</h3>
+				<a name="com.vip.paas.e2e.test.ci.cpms.PipelineTest"></a>
+				<table border="1" class="bodyTable">
+					<tbody>
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.PipelineTest.create"></a>create</td>
+									<td>0.031</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="a">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.PipelineTest.delete"></a>delete</td>
+									<td>1.421</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.PipelineTest.update"></a>update</td>
+									<td>0.167</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="a">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.PipelineTest.autoComplete"></a>autoComplete</td>
+									<td>0.053</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.PipelineTest.list"></a>list</td>
+									<td>2.237</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="a">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.PipelineTest.view"></a>view</td>
+									<td>2.231</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.PipelineTest.jenkinsSlaveLabels"></a>jenkinsSlaveLabels</td>
+									<td>0.354</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="a">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.PipelineTest.deleteInBatch"></a>deleteInBatch</td>
+									<td>2.383</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.PipelineTest.triggerInBatch"></a>triggerInBatch</td>
+									<td>5.440</td>
+								</tr>
+							
+						
+					</tbody>
+				</table>
+			</div>
+		
+			<div class="section">
+				<h3>
+					RecordTest<a name="RecordTest"></a>
+				</h3>
+				<a name="com.vip.paas.e2e.test.ci.cpms.RecordTest"></a>
+				<table border="1" class="bodyTable">
+					<tbody>
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.RecordTest.recordOperation"></a>recordOperation</td>
+									<td>321.363</td>
+								</tr>
+							
+						
+					</tbody>
+				</table>
+			</div>
+		
+			<div class="section">
+				<h3>
+					GroupTest<a name="GroupTest"></a>
+				</h3>
+				<a name="com.vip.paas.e2e.test.ci.cpms.GroupTest"></a>
+				<table border="1" class="bodyTable">
+					<tbody>
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.GroupTest.create"></a>create</td>
+									<td>3.325</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="a">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.GroupTest.delete"></a>delete</td>
+									<td>0.335</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.GroupTest.update"></a>update</td>
+									<td>0.163</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="a">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.GroupTest.autoComplete"></a>autoComplete</td>
+									<td>0.037</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.GroupTest.addDeleteMember"></a>addDeleteMember</td>
+									<td>0.394</td>
+								</tr>
+							
+						
+					</tbody>
+				</table>
+			</div>
+		
+			<div class="section">
+				<h3>
+					UserTest<a name="UserTest"></a>
+				</h3>
+				<a name="com.vip.paas.e2e.test.ci.cpms.UserTest"></a>
+				<table border="1" class="bodyTable">
+					<tbody>
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.UserTest.create"></a>create</td>
+									<td>0.188</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="a">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.UserTest.delete"></a>delete</td>
+									<td>0.113</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.UserTest.update"></a>update</td>
+									<td>0.453</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="a">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.UserTest.autoComplete"></a>autoComplete</td>
+									<td>0.690</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.UserTest.list"></a>list</td>
+									<td>0.380</td>
+								</tr>
+							
+						
+					</tbody>
+				</table>
+			</div>
+		
+			<div class="section">
+				<h3>
+					PhpTest<a name="PhpTest"></a>
+				</h3>
+				<a name="com.vip.paas.e2e.test.ci.cpms.PhpTest"></a>
+				<table border="1" class="bodyTable">
+					<tbody>
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ci.cpms.PhpTest.trigger"></a>trigger</td>
+									<td>3.499</td>
+								</tr>
+							
+						
+					</tbody>
+				</table>
+			</div>
+		
+	
+		
+			<div class="section">
+				<h3>
+					PermissionTest<a name="PermissionTest"></a>
+				</h3>
+				<a name="com.vip.paas.e2e.test.ds.auth.PermissionTest"></a>
+				<table border="1" class="bodyTable">
+					<tbody>
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ds.auth.PermissionTest.permissionForDeveloper"></a>permissionForDeveloper</td>
+									<td>4.320</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="a">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ds.auth.PermissionTest.permissionForNone"></a>permissionForNone</td>
+									<td>1.322</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ds.auth.PermissionTest.permissionForSuperAdmin"></a>permissionForSuperAdmin</td>
+									<td>2.838</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="a">
+									<td><a href="#com.vip.paas.e2e.test.ds.auth.PermissionTest.permissionForMaster"><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:F39F3D;border:0px solid black;margin-left:1px;margin-right:1px"></span></a></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ds.auth.PermissionTest.permissionForMaster"></a><a
+										href="#com.vip.paas.e2e.test.ds.auth.PermissionTest.permissionForMaster">permissionForMaster</a>
+										<div class="detailToggle" style="display: inline">
+											<a href="javascript:toggleDisplay('com.vip.paas.e2e.test.ds.auth.PermissionTest.permissionForMaster');"><span
+												style="display: inline;"
+												id="com.vip.paas.e2e.test.ds.auth.PermissionTest.permissionForMasteroff">
+													+ </span><span style="display: none;"
+												id="com.vip.paas.e2e.test.ds.auth.PermissionTest.permissionForMasteron">
+													- </span>[ Detail ]</a>
+										</div></td>
+									<td>1.223</td>
+								</tr>
+								<tr class="a">
+									<td></td>
+									<td>expected:&lt;true&gt; but was:&lt;false&gt;</td>
+									<td></td>
+								</tr>
+								<tr class="a">
+									<td></td>
+									<td>
+										<div
+											id="com.vip.paas.e2e.test.ds.auth.PermissionTest.permissionForMastererror"
+											style="display: none;">
+											<div>
+												<pre>java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.vip.paas.e2e.test.ds.auth.PermissionTest.listAllOrg(PermissionTest.java:160)
+	at com.vip.paas.e2e.test.ds.auth.PermissionTest.permissionForMaster(PermissionTest.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+</pre>
+											</div>
+										</div>
+									</td>
+									<td></td>
+								</tr>
+								<tr class="a">
+									<td></td>
+									<td name="testcase_name">
+										<pre>[com.vip.paas.e2e.test.ds.cpms.PipelineTest] send request: POST http://ciportal-orgcpms.staging.paas.paas.vip.com/ciplatform/rest/api/orgs/paas/pipelines
+[com.vip.paas.e2e.test.ci.cpms.PipelineTest] {&#34;code&#34;:200,&#34;status&#34;:&#34;OK&#34;,&#34;json_object&#34;:{&#34;name&#34;:&#34;paas.e2e.ci.cpms.pipeline.pipeline554B&#34;,&#34;owners&#34;:[&#34;paasci.builder&#34;],&#34;creator&#34;:&#34;paasci.builder&#34;,&#34;create_time&#34;:&#34;2016-01-19T03:39:49.060587671Z&#34;,&#34;modified_time&#34;:&#34;2016-01-19T03:39:49.060587671Z&#34;,&#34;dev_project&#34;:{&#34;name&#34;:&#34;paas.e2e.ci.cpms.pipeline.pipeline554B&#34;,&#34;repo&#34;:{&#34;scm_type&#34;:&#34;git&#34;,&#34;repo_path&#34;:&#34;http://gitlab.tools.vipshop.com/vip-paas/ci-portal-java.git&#34;,&#34;revision&#34;:&#34;end2end-testcase&#34;,&#34;branch&#34;:&#34;end2end-testcase&#34;,&#34;origin_repo_path&#34;:&#34;git@gitlab.tools.vipshop.com:vip-paas/ci-portal-java.git&#34;},&#34;version&#34;:&#34;1.0.0&#34;,&#34;type&#34;:&#34;maven&#34;,&#34;is_release&#34;:true,&#34;jdk&#34;:&#34;jdk1.7&#34;,&#34;node_label&#34;:&#34;docker-slave&#34;},&#34;period_trigger&#34;:{&#34;id&#34;:&#34;paas.e2e.ci.cpms.pipeline.pipeline554B_Period_Trigger&#34;,&#34;skipped&#34;:false,&#34;trigger_strategy&#34;:&#34;@daily&#34;},&#34;phase_compile_with_static_code_check&#34;:{&#34;id&#34;:&#34;paas.e2e.ci.cpms.pipeline.pipeline554B_Compile_With_Static_Code_Check&#34;,&#34;compile_skipped&#34;:false,&#34;static_code_check_skipped&#34;:true,&#34;maven_config&#34;:{&#34;root_pom&#34;:&#34;pom.xml&#34;,&#34;options&#34;:&#34;-Pproduction&#34;},&#34;static_code_check_config&#34;:{}},&#34;phase_ut_with_coverage&#34;:{&#34;id&#34;:&#34;paas.e2e.ci.cpms.pipeline.pipeline554B_UT_With_Coverage&#34;,&#34;skipped&#34;:false,&#34;coverage_skipped&#34;:false,&#34;maven_config&#34;:{&#34;root_pom&#34;:&#34;pom.xml&#34;,&#34;mvn_opts&#34;:&#34;-Xmx1024m -Xms256m -Xss1024k&#34;},&#34;config&#34;:{&#34;project_key&#34;:&#34;paas.e2e.ci.cpms.pipeline.pipeline554B_ut_coverage&#34;,&#34;project_name&#34;:&#34;paas.e2e.ci.cpms.pipeline.pipeline554B_ut_coverage&#34;,&#34;project_version&#34;:&#34;1.0.0&#34;,&#34;sources&#34;:&#34;src/main/java&#34;,&#34;binaries&#34;:&#34;target/classes&#34;,&#34;java_opts&#34;:&#34;-Xmx1024m -Xms256m -Xss1024k&#34;,&#34;test_sources&#34;:&#34;src/test/java&#34;,&#34;test_report_path&#34;:&#34;target/surefire-reports&#34;,&#34;jacoco_report_path&#34;:&#34;/target/jacoco.exec&#34;,&#34;coverage_plugin&#34;:&#34;jacoco&#34;}},&#34;phase_package&#34;:{&#34;id&#34;:&#34;paas.e2e.ci.cpms.pipeline.pipeline554B_Package&#34;,&#34;packages_domains&#34;:{&#34;ciportal.paas.vip.com&#34;:{&#34;pattern&#34;:&#34;target/*.war&#34;,&#34;is_push_images&#34;:true,&#34;push_images_config&#34;:{}}},&#34;maven_config&#34;:{&#34;root_pom&#34;:&#34;pom.xml&#34;,&#34;options&#34;:&#34;-Pproduction&#34;},&#34;is_keep&#34;:true,&#34;package_post_hooks&#34;:{}},&#34;pipeline_pre_hooks&#34;:{&#34;secret&#34;:&#34;9dtzKJxG&#34;,&#34;gitlab_hook&#34;:{&#34;url&#34;:&#34;http://localhost/p4/ci/ciplatform/rest/pipelines/gitlabhook/paas.e2e.ci.cpms.pipeline.pipeline554B?secret=9dtzKJxG&#34;}},&#34;records&#34;:null,&#34;users&#34;:{&#34;paasci.builder&#34;:&#34;Owner&#34;},&#34;is_send_email&#34;:false,&#34;jenkins_server_url&#34;:&#34;http://jenkins-slave-p5v6a.vclound.com:8080&#34;}}
+[com.vip.paas.e2e.test.ci.cpms.PipelineTest] send request: POST http://ciportal-orgcpms.staging.paas.paas.vip.com/ciplatform/rest/pipelines/paas.e2e.ci.cpms.pipeline.pipeline554A,paas.e2e.ci.cpms.pipeline.pipeline554B,/perform
+[com.vip.paas.e2e.test.ds.auth.PermissionTest] {&#34;code&#34;:200,&#34;status&#34;:&#34;OK&#34;,&#34;json_object&#34;:{&#34;namespace&#34;:&#34;paas-e2e-ds-auth-perm-org554&#34;,&#34;full_name&#34;:&#34;paas-e2e-ds-auth-perm-org554/pipeline/paas.e2e.ds.auth.perm.pipeline554&#34;,&#34;id&#34;:&#34;569db002b8b95dd604a9ab45&#34;,&#34;name&#34;:&#34;paas.e2e.ds.auth.perm.pipeline554&#34;,&#34;owners&#34;:[&#34;paasci.builder&#34;],&#34;creator&#34;:&#34;paasci.builder&#34;,&#34;create_time&#34;:&#34;2016-01-19T03:39:46.159Z&#34;,&#34;modified_time&#34;:&#34;2016-01-19T03:39:46.159Z&#34;,&#34;dev_project&#34;:{&#34;name&#34;:&#34;paas.e2e.ds.auth.perm.pipeline554&#34;,&#34;repo&#34;:{&#34;scm_type&#34;:&#34;git&#34;,&#34;repo_path&#34;:&#34;http://gitlab.tools.vipshop.com/vip-paas/ci-portal-java.git&#34;,&#34;revision&#34;:&#34;end2end-testcase&#34;,&#34;branch&#34;:&#34;end2end-testcase&#34;,&#34;origin_repo_path&#34;:&#34;git@gitlab.tools.vipshop.com:vip-paas/ci-portal-java.git&#34;},&#34;version&#34;:&#34;1.0.0&#34;,&#34;type&#34;:&#34;maven&#34;,&#34;is_release&#34;:true,&#34;jdk&#34;:&#34;jdk1.7&#34;,&#34;node_label&#34;:&#34;docker-slave&#34;},&#34;period_trigger&#34;:{&#34;id&#34;:&#34;paas.e2e.ds.auth.perm.pipeline554_Period_Trigger&#34;,&#34;skipped&#34;:false,&#34;trigger_strategy&#34;:&#34;@daily&#34;},&#34;phase_compile_with_static_code_check&#34;:{&#34;id&#34;:&#34;paas.e2e.ds.auth.perm.pipeline554_Compile_With_Static_Code_Check&#34;,&#34;compile_skipped&#34;:false,&#34;static_code_check_skipped&#34;:true,&#34;maven_config&#34;:{&#34;root_pom&#34;:&#34;pom.xml&#34;,&#34;options&#34;:&#34;-Pproduction&#34;},&#34;static_code_check_config&#34;:{}},&#34;phase_ut_with_coverage&#34;:{&#34;id&#34;:&#34;paas.e2e.ds.auth.perm.pipeline554_UT_With_Coverage&#34;,&#34;skipped&#34;:false,&#34;coverage_skipped&#34;:false,&#34;maven_config&#34;:{&#34;root_pom&#34;:&#34;pom.xml&#34;,&#34;mvn_opts&#34;:&#34;-Xmx1024m -Xms256m -Xss1024k&#34;},&#34;config&#34;:{&#34;project_key&#34;:&#34;paas.e2e.ds.auth.perm.pipeline554_ut_coverage&#34;,&#34;project_name&#34;:&#34;paas.e2e.ds.auth.perm.pipeline554_ut_coverage&#34;,&#34;project_version&#34;:&#34;1.0.0&#34;,&#34;sources&#34;:&#34;src/main/java&#34;,&#34;binaries&#34;:&#34;target/classes&#34;,&#34;java_opts&#34;:&#34;-Xmx1024m -Xms256m -Xss1024k&#34;,&#34;test_sources&#34;:&#34;src/test/java&#34;,&#34;test_report_path&#34;:&#34;target/surefire-reports&#34;,&#34;jacoco_report_path&#34;:&#34;/target/jacoco.exec&#34;,&#34;coverage_plugin&#34;:&#34;jacoco&#34;}},&#34;phase_package&#34;:{&#34;id&#34;:&#34;paas.e2e.ds.auth.perm.pipeline554_Package&#34;,&#34;packages_domains&#34;:{&#34;ciportal.paas.vip.com&#34;:{&#34;pattern&#34;:&#34;target/*.war&#34;,&#34;is_push_images&#34;:true,&#34;push_images_config&#34;:{}}},&#34;maven_config&#34;:{&#34;root_pom&#34;:&#34;pom.xml&#34;,&#34;options&#34;:&#34;-Pproduction&#34;},&#34;is_keep&#34;:true,&#34;package_post_hooks&#34;:{}},&#34;pipeline_pre_hooks&#34;:{&#34;secret&#34;:&#34;iRwz6kp5&#34;,&#34;gitlab_hook&#34;:{&#34;url&#34;:&#34;http://localhost/p4/ci/ciplatform/rest/pipelines/gitlabhook/paas.e2e.ds.auth.perm.pipeline554?secret=iRwz6kp5&#34;}},&#34;records&#34;:[],&#34;users&#34;:{&#34;paasci.builder&#34;:&#34;Owner&#34;},&#34;is_send_email&#34;:false,&#34;jenkins_server_url&#34;:&#34;http://jenkins-slave-p5v6a.vclound.com:8080&#34;}}
+[com.vip.paas.e2e.test.ds.auth.PermissionTest] send request: DELETE http://ciportal-orgcpms.staging.paas.paas.vip.com/ciplatform/rest/orgs/paas-e2e-ds-auth-perm-org554/spaces/paas-e2e-ds-auth-perm-space554
+[com.vip.paas.e2e.test.ds.auth.PermissionTest] {&#34;code&#34;:404,&#34;message&#34;:&#34;Cannot find any space by paas-e2e-ds-auth-perm-org554/paas-e2e-ds-auth-perm-space554.&#34;}
+[com.vip.paas.e2e.test.ds.auth.PermissionTest] send request: DELETE http://ciportal-orgcpms.staging.paas.paas.vip.com/ciplatform/rest/orgs/paas-e2e-ds-auth-perm-org554
+[com.vip.paas.e2e.test.ds.cpms.PipelineTest] {&#34;code&#34;:200,&#34;status&#34;:&#34;OK&#34;,&#34;json_object&#34;:{&#34;namespace&#34;:&#34;paas&#34;,&#34;full_name&#34;:&#34;paas/pipeline/paas.e2e.ds.cpms.pipeline.pipeline554A&#34;,&#34;name&#34;:&#34;paas.e2e.ds.cpms.pipeline.pipeline554A&#34;,&#34;owners&#34;:[&#34;paasci.builder&#34;],&#34;creator&#34;:&#34;paasci.builder&#34;,&#34;create_time&#34;:&#34;2016-01-19T03:39:49.368520917Z&#34;,&#34;modified_time&#34;:&#34;2016-01-19T03:39:49.368520917Z&#34;,&#34;dev_project&#34;:{&#34;name&#34;:&#34;paas.e2e.ds.cpms.pipeline.pipeline554A&#34;,&#34;repo&#34;:{&#34;scm_type&#34;:&#34;git&#34;,&#34;repo_path&#34;:&#34;http://gitlab.tools.vipshop.com/vip-paas/ci-portal-java.git&#34;,&#34;revision&#34;:&#34;end2end-testcase&#34;,&#34;branch&#34;:&#34;end2end-testcase&#34;,&#34;origin_repo_path&#34;:&#34;git@gitlab.tools.vipshop.com:vip-paas/ci-portal-java.git&#34;},&#34;version&#34;:&#34;1.0.0&#34;,&#34;type&#34;:&#34;maven&#34;,&#34;is_release&#34;:true,&#34;jdk&#34;:&#34;jdk1.7&#34;,&#34;node_label&#34;:&#34;docker-slave&#34;},&#34;period_trigger&#34;:{&#34;id&#34;:&#34;paas.e2e.ds.cpms.pipeline.pipeline554A_Period_Trigger&#34;,&#34;skipped&#34;:false,&#34;trigger_strategy&#34;:&#34;@daily&#34;},&#34;phase_compile_with_static_code_check&#34;:{&#34;id&#34;:&#34;paas.e2e.ds.cpms.pipeline.pipeline554A_Compile_With_Static_Code_Check&#34;,&#34;compile_skipped&#34;:false,&#34;static_code_check_skipped&#34;:true,&#34;maven_config&#34;:{&#34;root_pom&#34;:&#34;pom.xml&#34;,&#34;options&#34;:&#34;-Pproduction&#34;},&#34;static_code_check_config&#34;:{}},&#34;phase_ut_with_coverage&#34;:{&#34;id&#34;:&#34;paas.e2e.ds.cpms.pipeline.pipeline554A_UT_With_Coverage&#34;,&#34;skipped&#34;:false,&#34;coverage_skipped&#34;:false,&#34;maven_config&#34;:{&#34;root_pom&#34;:&#34;pom.xml&#34;,&#34;mvn_opts&#34;:&#34;-Xmx1024m -Xms256m -Xss1024k&#34;},&#34;config&#34;:{&#34;project_key&#34;:&#34;paas.e2e.ds.cpms.pipeline.pipeline554A_ut_coverage&#34;,&#34;project_name&#34;:&#34;paas.e2e.ds.cpms.pipeline.pipeline554A_ut_coverage&#34;,&#34;project_version&#34;:&#34;1.0.0&#34;,&#34;sources&#34;:&#34;src/main/java&#34;,&#34;binaries&#34;:&#34;target/classes&#34;,&#34;java_opts&#34;:&#34;-Xmx1024m -Xms256m -Xss1024k&#34;,&#34;test_sources&#34;:&#34;src/test/java&#34;,&#34;test_report_path&#34;:&#34;target/surefire-reports&#34;,&#34;jacoco_report_path&#34;:&#34;/target/jacoco.exec&#34;,&#34;coverage_plugin&#34;:&#34;jacoco&#34;}},&#34;phase_package&#34;:{&#34;id&#34;:&#34;paas.e2e.ds.cpms.pipeline.pipeline554A_Package&#34;,&#34;packages_domains&#34;:{&#34;ciportal.paas.vip.com&#34;:{&#34;pattern&#34;:&#34;target/*.war&#34;,&#34;is_push_images&#34;:true,&#34;push_images_config&#34;:{}}},&#34;maven_config&#34;:{&#34;root_pom&#34;:&#34;pom.xml&#34;,&#34;options&#34;:&#34;-Pproduction&#34;},&#34;is_keep&#34;:true,&#34;package_post_hooks&#34;:{}},&#34;pipeline_pre_hooks&#34;:{&#34;secret&#34;:&#34;1E59uhBn&#34;,&#34;gitlab_hook&#34;:{&#34;url&#34;:&#34;http://localhost/p4/ci/ciplatform/rest/pipelines/gitlabhook/paas.e2e.ds.cpms.pipeline.pipeline554A?secret=1E59uhBn&#34;}},&#34;records&#34;:null,&#34;users&#34;:{&#34;paasci.builder&#34;:&#34;Owner&#34;},&#34;is_send_email&#34;:false,&#34;jenkins_server_url&#34;:&#34;http://jenkins-slave-p5v6a.vclound.com:8080&#34;}}
+[com.vip.paas.e2e.test.ds.auth.PermissionTest] {&#34;code&#34;:200,&#34;status&#34;:&#34;OK&#34;,&#34;json_object&#34;:{&#34;_id&#34;:&#34;569db001be9b6d0001000005&#34;,&#34;name&#34;:&#34;paas-e2e-ds-auth-perm-org554&#34;,&#34;display_name&#34;:&#34;e2e-test-perm&#34;,&#34;created_time&#34;:&#34;2016-01-19T03:39:45.86Z&#34;,&#34;modified_time&#34;:&#34;2016-01-19T03:39:45.86Z&#34;}}
+[com.vip.paas.e2e.test.ds.auth.PermissionTest] send request: DELETE http://ciportal-orgcpms.staging.paas.paas.vip.com/ciplatform/rest/orgs/paas-e2e-ds-auth-perm-org554A
+[com.vip.paas.e2e.test.ds.cpms.PipelineTest] send request: POST http://ciportal-orgcpms.staging.paas.paas.vip.com/ciplatform/rest/api/orgs/paas/pipelines
+[com.vip.paas.e2e.test.ci.cpms.PipelineTest] {&#34;code&#34;:200,&#34;result&#34;:&#34;paas.e2e.ci.cpms.pipeline.pipeline554A,paas.e2e.ci.cpms.pipeline.pipeline554B,&#34;,&#34;message&#34;:&#34;Success to trigger records.&#34;}
+[com.vip.paas.e2e.test.ci.cpms.PipelineTest] send request: DELETE http://ciportal-orgcpms.staging.paas.paas.vip.com/ciplatform/rest/pipelines/paas.e2e.ci.cpms.pipeline.pipeline554A
+[com.vip.paas.e2e.test.ds.auth.PermissionTest] {&#34;code&#34;:200,&#34;status&#34;:&#34;OK&#34;,&#34;json_object&#34;:{&#34;_id&#34;:&#34;569db003be9b6d0001000008&#34;,&#34;name&#34;:&#34;paas-e2e-ds-auth-perm-org554A&#34;,&#34;display_name&#34;:&#34;e2e-testA&#34;,&#34;created_time&#34;:&#34;2016-01-19T03:39:47.085Z&#34;,&#34;modified_time&#34;:&#34;2016-01-19T03:39:47.085Z&#34;}}
+</pre>
+									</td>
+									<td></td>
+								</tr>
+							
+						
+					</tbody>
+				</table>
+			</div>
+		
+			<div class="section">
+				<h3>
+					RoleTest<a name="RoleTest"></a>
+				</h3>
+				<a name="com.vip.paas.e2e.test.ds.auth.RoleTest"></a>
+				<table border="1" class="bodyTable">
+					<tbody>
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ds.auth.RoleTest.addRole"></a>addRole</td>
+									<td>0.045</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="a">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ds.auth.RoleTest.updateRole"></a>updateRole</td>
+									<td>0.119</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ds.auth.RoleTest.removeRole"></a>removeRole</td>
+									<td>0.001</td>
+								</tr>
+							
+						
+					</tbody>
+				</table>
+			</div>
+		
+			<div class="section">
+				<h3>
+					OrgSpaceTest<a name="OrgSpaceTest"></a>
+				</h3>
+				<a name="com.vip.paas.e2e.test.ds.auth.OrgSpaceTest"></a>
+				<table border="1" class="bodyTable">
+					<tbody>
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ds.auth.OrgSpaceTest.spaceNumLimitation"></a>spaceNumLimitation</td>
+									<td>0.029</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="a">
+									<td><a href="#com.vip.paas.e2e.test.ds.auth.OrgSpaceTest.createOrganization"><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:F39F3D;border:0px solid black;margin-left:1px;margin-right:1px"></span></a></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ds.auth.OrgSpaceTest.createOrganization"></a><a href="#com.vip.paas.e2e.test.ds.auth.OrgSpaceTest.createOrganization">createOrganization</a>
+										<div class="detailToggle" style="display: inline">
+											<a
+												href="javascript:toggleDisplay('com.vip.paas.e2e.test.ds.auth.OrgSpaceTest.createOrganization');"><span
+												style="display: inline;"
+												id="com.vip.paas.e2e.test.ds.auth.OrgSpaceTest.createOrganizationoff">
+													+ </span><span style="display: none;"
+												id="com.vip.paas.e2e.test.ds.auth.OrgSpaceTest.createOrganizationon">
+													- </span>[ Detail ]</a>
+										</div></td>
+									<td>0.037</td>
+								</tr>
+								<tr class="a">
+									<td></td>
+									<td>skipped</td>
+								<td></td></tr>
+							
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ds.auth.OrgSpaceTest.updateSpaceInOrg"></a>updateSpaceInOrg</td>
+									<td>0.288</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="a">
+									<td><a href="#com.vip.paas.e2e.test.ds.auth.OrgSpaceTest.removeOrganization"><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#E4443B;border:0px solid black;margin-left:1px;margin-right:1px"></span></a></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ds.auth.OrgSpaceTest.removeOrganization"></a><a
+										href="#com.vip.paas.e2e.test.ds.auth.OrgSpaceTest.removeOrganization">removeOrganization</a>
+										<div class="detailToggle" style="display: inline">
+											<a
+												href="javascript:toggleDisplay('com.vip.paas.e2e.test.ds.auth.OrgSpaceTest.removeOrganization');"><span
+												style="display: inline;"
+												id="com.vip.paas.e2e.test.ds.auth.OrgSpaceTest.removeOrganizationoff">
+													+ </span><span style="display: none;"
+												id="com.vip.paas.e2e.test.ds.auth.OrgSpaceTest.removeOrganizationon">
+													- </span>[ Detail ]</a>
+										</div></td>
+									<td>0.064</td>
+								</tr>
+								<tr class="a">
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr class="a">
+									<td></td>
+									<td>
+										<div
+											id="com.vip.paas.e2e.test.ds.auth.OrgSpaceTest.removeOrganizationerror"
+											style="display: none;">
+											<div>
+												<pre>java.lang.NullPointerException
+	at com.vip.paas.e2e.test.ds.auth.OrgSpaceTest.removeOrganization(OrgSpaceTest.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+</pre>
+											</div>
+										</div>
+									</td>
+									<td></td>
+								</tr>
+								<tr class="a">
+									<td></td>
+									<td name="testcase_name">
+										<pre>[com.vip.paas.e2e.test.ci.cpms.RoleTest] send request: POST http://ciportal-orgcpms.staging.paas.paas.vip.com/ciplatform/rest/access/paas.e2e.ci.cpms.role.pipeline554
+[com.vip.paas.e2e.test.ds.auth.OrgSpaceTest] {&#34;code&#34;:404,&#34;message&#34;:&#34;Cannot find any organization by paas-e2e-ds-auth-os-org554.&#34;}
+</pre>
+									</td>
+									<td></td>
+								</tr>
+							
+						
+							
+							
+								<tr class="b">
+									<td><a href="#com.vip.paas.e2e.test.ds.auth.OrgSpaceTest.updateOrganization"><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:F39F3D;border:0px solid black;margin-left:1px;margin-right:1px"></span></a></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ds.auth.OrgSpaceTest.updateOrganization"></a><a href="#com.vip.paas.e2e.test.ds.auth.OrgSpaceTest.updateOrganization">updateOrganization</a>
+										<div class="detailToggle" style="display: inline">
+											<a
+												href="javascript:toggleDisplay('com.vip.paas.e2e.test.ds.auth.OrgSpaceTest.updateOrganization');"><span
+												style="display: inline;"
+												id="com.vip.paas.e2e.test.ds.auth.OrgSpaceTest.updateOrganizationoff">
+													+ </span><span style="display: none;"
+												id="com.vip.paas.e2e.test.ds.auth.OrgSpaceTest.updateOrganizationon">
+													- </span>[ Detail ]</a>
+										</div></td>
+									<td>0.065</td>
+								</tr>
+								<tr class="b">
+									<td></td>
+									<td>skipped</td>
+								<td></td></tr>
+							
+						
+							
+							
+								<tr class="a">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ds.auth.OrgSpaceTest.removeSpaceInOrg"></a>removeSpaceInOrg</td>
+									<td>0.408</td>
+								</tr>
+							
+						
+					</tbody>
+				</table>
+			</div>
+		
+			<div class="section">
+				<h3>
+					UserTest<a name="UserTest"></a>
+				</h3>
+				<a name="com.vip.paas.e2e.test.ds.auth.UserTest"></a>
+				<table border="1" class="bodyTable">
+					<tbody>
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ds.auth.UserTest.create"></a>create</td>
+									<td>0.035</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="a">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ds.auth.UserTest.remove"></a>remove</td>
+									<td>0.473</td>
+								</tr>
+							
+						
+							
+							
+								<tr class="b">
+									<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#6ec258;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+									<td><a name="TC_com.vip.paas.e2e.test.ds.auth.UserTest.update"></a>update</td>
+									<td>0.299</td>
+								</tr>
+							
+						
+					</tbody>
+				</table>
+			</div>
+		
+	
+	<br>
+</div>
+			<div class="section">
+	<h2>
+		Failure Details<a name="Failure_Details"></a>
+	</h2>
+	<a name="Failure_Details"></a>
+	<p>
+		[<a href="#Summary">Summary</a>] [<a href="#Package_List">Package
+			List</a>] [<a href="#Test_Cases">Test Cases</a>]
+	</p>
+	<br>
+		<table border="1" class="bodyTable">
+			<tbody>
+				
+					
+					
+						<tr class="b">
+							<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:F39F3D;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+							<td><a name="com.vip.paas.e2e.test.ds.auth.OrgSpaceTest.createOrganization"></a>createOrganization</td>
+						</tr>
+						<tr class="b">
+							<td></td>
+							<td>skipped: skipped</td>
+						</tr>
+					
+				
+					
+					
+						<tr class="a">
+							<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:#E4443B;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+							<td><a name="com.vip.paas.e2e.test.ds.auth.OrgSpaceTest.removeOrganization"></a>removeOrganization</td>
+						</tr>
+						<tr class="a">
+							<td></td>
+							<td>java.lang.NullPointerException</td>
+						</tr>
+						<tr class="a">
+							<td></td>
+							<td>
+								<div id="removeOrganizationerror">	at com.vip.paas.e2e.test.ds.auth.OrgSpaceTest.removeOrganization(OrgSpaceTest.java:63)</div>
+							</td>
+						</tr>
+					
+				
+					
+					
+						<tr class="b">
+							<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:F39F3D;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+							<td><a name="com.vip.paas.e2e.test.ds.auth.OrgSpaceTest.updateOrganization"></a>updateOrganization</td>
+						</tr>
+						<tr class="b">
+							<td></td>
+							<td>skipped: skipped</td>
+						</tr>
+					
+				
+					
+					
+						<tr class="a">
+							<td><span style="width:13px;height:13px;display:inline-block;border-radius:13px;background-color:F39F3D;border:0px solid black;margin-left:1px;margin-right:1px"></span></td>
+							<td><a name="com.vip.paas.e2e.test.ds.auth.PermissionTest.permissionForMaster"></a>permissionForMaster</td>
+						</tr>
+						<tr class="a">
+							<td></td>
+							<td></td>
+						</tr>
+						<tr class="a">
+							<td></td>
+							<td>
+								<div id="permissionForMastererror">	at com.vip.paas.e2e.test.ds.auth.PermissionTest.permissionForMaster(PermissionTest.java:75)</div>
+							</td>
+						</tr>
+					
+				
+			</tbody>
+		</table>
+		<br>
+</div>
+		</div>
+	</div>
+	<div class="clear">
+		<hr>
+	</div>
+</body>
+</html>

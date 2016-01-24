@@ -13,17 +13,17 @@ func Template() *template.Template {
 		"resultSymbol":    ResultSymbol,
 	}
 
-	t := template.New("test").Funcs(fmap)
-	t = template.Must(t.ParseFiles("tmpl/summary.html"))
-	t = template.Must(t.ParseFiles("tmpl/packages.html"))
-	t = template.Must(t.ParseFiles("tmpl/testcase.html"))
-	t = template.Must(t.ParseFiles("tmpl/failure_detail.html"))
-	t = template.Must(t.ParseFiles("tmpl/maven_base.css"))
-	t = template.Must(t.ParseFiles("tmpl/maven_theme.css"))
-	t = template.Must(t.ParseFiles("tmpl/site.css"))
-	t = template.Must(t.ParseFiles("tmpl/print.css"))
-	t = template.Must(t.ParseFiles("tmpl/main.js"))
-	t = template.Must(t.ParseFiles("tmpl/main.html"))
+	t := template.New("htmlizer").Funcs(fmap)
+	template.Must(t.ParseFiles("tmpl/summary.html"))
+	template.Must(t.ParseFiles("tmpl/packages.html"))
+	template.Must(t.ParseFiles("tmpl/testcase.html"))
+	template.Must(t.ParseFiles("tmpl/failure_detail.html"))
+	template.Must(t.ParseFiles("tmpl/maven_base.css"))
+	template.Must(t.ParseFiles("tmpl/maven_theme.css"))
+	template.Must(t.ParseFiles("tmpl/site.css"))
+	template.Must(t.ParseFiles("tmpl/print.css"))
+	template.Must(t.ParseFiles("tmpl/main.js"))
+	template.Must(t.ParseFiles("tmpl/main.html"))
 
 	return t
 }
